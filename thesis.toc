@@ -1,0 +1,116 @@
+\contentsline {chapter}{摘要}{i}{section*.4}%
+\contentsline {chapter}{Abstract}{ii}{section*.5}%
+\contentsline {chapter}{英文延伸摘要}{iii}{section*.6}%
+\contentsline {chapter}{誌謝}{vi}{section*.9}%
+\contentsline {chapter}{Acknowledgements}{vii}{section*.10}%
+\contentsline {chapter}{Table of Contents}{viii}{section*.11}%
+\contentsline {chapter}{List of Tables}{ix}{section*.12}%
+\contentsline {chapter}{List of Figures}{x}{section*.13}%
+\contentsline {chapter}{Nomenclature}{xi}{section*.14}%
+\contentsline {chapter}{Chapter 1.{\ \ \ }Introduction}{1}{chapter.1}%
+\contentsline {chapter}{Chapter 2.{\ \ \ }Objective}{3}{chapter.2}%
+\contentsline {section}{2.1.{\ \ \ }起因}{3}{section.2.1}%
+\contentsline {section}{2.2.{\ \ \ }目標}{3}{section.2.2}%
+\contentsline {section}{2.3.{\ \ \ }缺點}{4}{section.2.3}%
+\contentsline {section}{2.4.{\ \ \ }總結}{4}{section.2.4}%
+\contentsline {chapter}{Chapter 3.{\ \ \ }本模版使用教學}{5}{chapter.3}%
+\contentsline {section}{3.1.{\ \ \ }基本介紹 Introduction}{5}{section.3.1}%
+\contentsline {subsection}{3.1.1.{\ \ \ }本模版的檔案}{5}{subsection.3.1.1}%
+\contentsline {subsection}{3.1.2.{\ \ \ }編寫用Editor}{5}{subsection.3.1.2}%
+\contentsline {subsection}{3.1.3.{\ \ \ }產生用的工具}{6}{subsection.3.1.3}%
+\contentsline {section}{3.2.{\ \ \ }檔案結構 Source Tree}{7}{section.3.2}%
+\contentsline {section}{3.3.{\ \ \ }產生論文 Generate Thesis}{8}{section.3.3}%
+\contentsline {subsection}{3.3.1.{\ \ \ }MiKTeX安裝}{8}{subsection.3.3.1}%
+\contentsline {subsection}{3.3.2.{\ \ \ }更新MiKTeX}{10}{subsection.3.3.2}%
+\contentsline {subsection}{3.3.3.{\ \ \ }Texmaker安裝}{14}{subsection.3.3.3}%
+\contentsline {subsection}{3.3.4.{\ \ \ }產生論文和封面}{15}{subsection.3.3.4}%
+\contentsline {subsection}{3.3.5.{\ \ \ }產生PDF的流程}{18}{subsection.3.3.5}%
+\contentsline {section}{3.4.{\ \ \ }論文基本資料設定 Thesis's configuration}{19}{section.3.4}%
+\contentsline {chapter}{Chapter 4.{\ \ \ }LaTex編寫教學}{45}{chapter.4}%
+\contentsline {section}{4.1.{\ \ \ }基本介紹 Introduction}{45}{section.4.1}%
+\contentsline {section}{4.2.{\ \ \ }基本語法 Basic syntax}{46}{section.4.2}%
+\contentsline {subsection}{4.2.1.{\ \ \ }字體變化}{46}{subsection.4.2.1}%
+\contentsline {subsection}{4.2.2.{\ \ \ }清單 List Structures}{47}{subsection.4.2.2}%
+\contentsline {subsection}{4.2.3.{\ \ \ }標記 Label}{52}{subsection.4.2.3}%
+\contentsline {subsection}{4.2.4.{\ \ \ }引用 Reference}{53}{subsection.4.2.4}%
+\contentsline {subsection}{4.2.5.{\ \ \ }註解 Comment}{54}{subsection.4.2.5}%
+\contentsline {subsection}{4.2.6.{\ \ \ }引用別的LaTex檔}{55}{subsection.4.2.6}%
+\contentsline {section}{4.3.{\ \ \ }章節 Chapter/Section}{56}{section.4.3}%
+\contentsline {section}{4.4.{\ \ \ }圖片 Figure}{58}{section.4.4}%
+\contentsline {subsection}{4.4.1.{\ \ \ }圖片小知識}{58}{subsection.4.4.1}%
+\contentsline {subsection}{4.4.2.{\ \ \ }轉換格式}{59}{subsection.4.4.2}%
+\contentsline {subsection}{4.4.3.{\ \ \ }使用介紹}{61}{subsection.4.4.3}%
+\contentsline {subsection}{4.4.4.{\ \ \ }單張}{62}{subsection.4.4.4}%
+\contentsline {subsection}{4.4.5.{\ \ \ }多張}{70}{subsection.4.4.5}%
+\contentsline {section}{4.5.{\ \ \ }表格 Table}{77}{section.4.5}%
+\contentsline {subsection}{4.5.1.{\ \ \ }產生LaTex}{78}{subsection.4.5.1}%
+\contentsline {subsection}{4.5.2.{\ \ \ }功能}{79}{subsection.4.5.2}%
+\contentsline {subsection}{4.5.3.{\ \ \ }File}{79}{subsection.4.5.3}%
+\contentsline {subsection}{4.5.4.{\ \ \ }Edit}{82}{subsection.4.5.4}%
+\contentsline {subsection}{4.5.5.{\ \ \ }Table}{83}{subsection.4.5.5}%
+\contentsline {subsection}{4.5.6.{\ \ \ }Extra options}{84}{subsection.4.5.6}%
+\contentsline {subsection}{4.5.7.{\ \ \ }Style}{85}{subsection.4.5.7}%
+\contentsline {subsection}{4.5.8.{\ \ \ }其他}{86}{subsection.4.5.8}%
+\contentsline {subsection}{4.5.9.{\ \ \ }模版提供的功能}{87}{subsection.4.5.9}%
+\contentsline {subsection}{4.5.10.{\ \ \ }表格闊度和文字位置}{97}{subsection.4.5.10}%
+\contentsline {subsection}{4.5.11.{\ \ \ }使用斜線}{98}{subsection.4.5.11}%
+\contentsline {section}{4.6.{\ \ \ }公式 Equation}{103}{section.4.6}%
+\contentsline {subsection}{4.6.1.{\ \ \ }介紹}{103}{subsection.4.6.1}%
+\contentsline {subsection}{4.6.2.{\ \ \ }使用方式}{103}{subsection.4.6.2}%
+\contentsline {subsection}{4.6.3.{\ \ \ }工具}{106}{subsection.4.6.3}%
+\contentsline {subsection}{4.6.4.{\ \ \ }轉成圖片}{107}{subsection.4.6.4}%
+\contentsline {section}{4.7.{\ \ \ }術語/符號 Nomenclature}{108}{section.4.7}%
+\contentsline {subsection}{4.7.1.{\ \ \ }使用方式}{108}{subsection.4.7.1}%
+\contentsline {section}{4.8.{\ \ \ }文獻引用 Bibliography/Reference}{110}{section.4.8}%
+\contentsline {subsection}{4.8.1.{\ \ \ }介紹}{110}{subsection.4.8.1}%
+\contentsline {subsection}{4.8.2.{\ \ \ }使用方式}{110}{subsection.4.8.2}%
+\contentsline {section}{4.9.{\ \ \ }虛擬程式碼(Pseudocode)}{112}{section.4.9}%
+\contentsline {chapter}{Chapter 5.{\ \ \ }老師們的話 Words from Professors}{117}{chapter.5}%
+\contentsline {section}{5.1.{\ \ \ }想法}{117}{section.5.1}%
+\contentsline {section}{5.2.{\ \ \ }投影片/presentation}{117}{section.5.2}%
+\contentsline {section}{5.3.{\ \ \ }投論文的目標}{121}{section.5.3}%
+\contentsline {section}{5.4.{\ \ \ }實驗的比較對象}{121}{section.5.4}%
+\contentsline {section}{5.5.{\ \ \ }Related work}{121}{section.5.5}%
+\contentsline {section}{5.6.{\ \ \ }References}{121}{section.5.6}%
+\contentsline {section}{5.7.{\ \ \ }圖上的文字 / 表格}{122}{section.5.7}%
+\contentsline {section}{5.8.{\ \ \ }寫作技術}{122}{section.5.8}%
+\contentsline {section}{5.9.{\ \ \ }內容}{122}{section.5.9}%
+\contentsline {section}{5.10.{\ \ \ }公式}{122}{section.5.10}%
+\contentsline {chapter}{Appendix A.{\ \ \ }可使用這模版的系所}{124}{appendixchapter.1}%
+\contentsline {section}{A.1.{\ \ \ }應該可使用}{125}{appendixsection.1}%
+\contentsline {section}{A.2.{\ \ \ }應該不可使用}{125}{appendixsection.2}%
+\contentsline {chapter}{Appendix B.{\ \ \ }繳交流程說明}{126}{appendixchapter.2}%
+\contentsline {chapter}{Appendix C.{\ \ \ }各系所博碩士撰寫論文須知}{130}{appendixchapter.3}%
+\contentsline {chapter}{Appendix D.{\ \ \ }電子論文上傳前檢查事項}{137}{appendixchapter.4}%
+\contentsline {chapter}{Appendix E.{\ \ \ }論文提交說明}{143}{appendixchapter.5}%
+\contentsline {chapter}{Appendix F.{\ \ \ }口試注意事項}{160}{appendixchapter.6}%
+\contentsline {chapter}{Appendix G.{\ \ \ }常見問題Q\&A}{166}{appendixchapter.7}%
+\contentsline {chapter}{Appendix H.{\ \ \ }LaTex Symbol寫法}{175}{appendixchapter.8}%
+\contentsline {chapter}{Appendix I.{\ \ \ }測試頁 Testing Pages}{226}{appendixchapter.9}%
+\contentsline {section}{I.1.{\ \ \ }半形字元與全形字元的比較 (ASCII字元)}{226}{appendixsection.1}%
+\contentsline {section}{I.2.{\ \ \ }英文內容 (只用段落來分段)}{228}{appendixsection.2}%
+\contentsline {section}{I.3.{\ \ \ }英文內容 (只用強制斷行)}{229}{appendixsection.3}%
+\contentsline {section}{I.4.{\ \ \ }英文內容 (段落 + 強制斷行)}{230}{appendixsection.4}%
+\contentsline {section}{I.5.{\ \ \ }中文內容 (只用段落來分段)}{231}{appendixsection.5}%
+\contentsline {section}{I.6.{\ \ \ }中文內容 (只用強制斷行)}{232}{appendixsection.6}%
+\contentsline {section}{I.7.{\ \ \ }中文內容 (段落 + 強制斷行)}{233}{appendixsection.7}%
+\contentsline {section}{I.8.{\ \ \ }混合的中英文內容 (只用段落來分段)}{235}{appendixsection.8}%
+\contentsline {section}{I.9.{\ \ \ }Table使用透明度}{239}{appendixsection.9}%
+\contentsline {section}{I.10.{\ \ \ }Table測試寬度}{240}{appendixsection.10}%
+\contentsline {section}{I.11.{\ \ \ }Figure使用透明度}{241}{appendixsection.11}%
+\contentsline {section}{I.12.{\ \ \ }Equation}{243}{appendixsection.12}%
+\contentsline {chapter}{Appendix J.{\ \ \ }測試Chapter/Section (中文內容)}{244}{appendixchapter.10}%
+\contentsline {section}{J.1.{\ \ \ }Section}{244}{appendixsection.1}%
+\contentsline {subsection}{J.1.1.{\ \ \ }SubSection}{244}{appendixsubsection.1}%
+\contentsline {subsubsection}{{\ \ \ }SubSubSection}{245}{appendixsubsubsection.1}%
+\contentsline {section}{J.2.{\ \ \ }Section}{245}{appendixsection.2}%
+\contentsline {subsection}{J.2.1.{\ \ \ }SubSection}{245}{appendixsubsection.1}%
+\contentsline {subsubsection}{{\ \ \ }SubSubSection}{245}{appendixsubsubsection.1}%
+\contentsline {chapter}{Appendix K.{\ \ \ }測試Reference/Cite}{246}{appendixchapter.11}%
+\contentsline {section}{K.1.{\ \ \ }Section}{246}{appendixsection.1}%
+\contentsline {subsection}{K.1.1.{\ \ \ }SubSection}{246}{appendixsubsection.1}%
+\contentsline {subsubsection}{{\ \ \ }SubSubSection}{246}{appendixsubsubsection.1}%
+\contentsline {chapter}{Appendix L.{\ \ \ }測試 RefXXX}{248}{appendixchapter.12}%
+\contentsline {chapter}{Appendix M.{\ \ \ }測試Theorem}{250}{appendixchapter.13}%
+\contentsline {section}{M.1.{\ \ \ }Test counter following section}{252}{appendixsection.1}%
+\contentsline {section}{M.2.{\ \ \ }Test counters of each theorems}{253}{appendixsection.2}%

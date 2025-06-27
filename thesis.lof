@@ -1,0 +1,77 @@
+\addvspace {10 pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces CC Attribution-NonCommercial-ShareAlike License\relax }}{2}{figure.caption.18}%
+\addvspace {10 pt}
+\addvspace {10 pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Template on GitHub\relax }}{5}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Download Icon\relax }}{5}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces MiKTeX Logo\relax }}{8}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Download MiKTeX\relax }}{8}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 安裝MiKTeX\relax }}{8}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Download Package\relax }}{9}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 等待安裝完成\relax }}{9}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces 例子: package<zhnumber>說package<expl3>版本太舊\relax }}{10}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 在Windows中更新MiKTeX\relax }}{10}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Update程式畫面\relax }}{11}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Searching packages\relax }}{11}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Select package\relax }}{12}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces package <l3kernel> and <l3packages>\relax }}{12}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Downloading package\relax }}{13}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces 等待安裝完成\relax }}{13}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Texmaker Logo\relax }}{14}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Download Texmaker\relax }}{14}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces 安裝Texmaker\relax }}{14}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces 安裝Texmaker\relax }}{14}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Texmaker打開thesis.tex畫面\relax }}{15}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces 改使用XeLaTeX\relax }}{15}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces 處理的結果\relax }}{16}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces 瀏覽PDF\relax }}{16}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Texmaker打開cover.tex畫面\relax }}{17}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces 資料夾內容\relax }}{17}{figure.caption.45}%
+\addvspace {10 pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 圖片類別\relax }}{58}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Little man\relax }}{64}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Little man No.1\relax }}{64}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Little man No.2\relax }}{65}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces opacity使用預設\relax }}{66}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces opacity使用0.4\relax }}{67}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces opacity使用預設\relax }}{68}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces opacity使用0.4\relax }}{68}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 2 figures and 1 figure per row\relax }}{71}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces 2 figures and 2 figures per row\relax }}{71}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces 3 figures and 2 figures per row\relax }}{72}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces 4 figures and 2 figures per row\relax }}{73}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces 8 figures and 2 figures per row\relax }}{74}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces 8 figures and 3 figures per row\relax }}{75}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces 8 figures and 4 figures per row\relax }}{76}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces LaTeX Table Generator頁面\relax }}{77}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Enter example data\relax }}{80}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Result of example data\relax }}{80}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Option of caption\relax }}{84}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces A sample between LaTex style and Booktabs style\relax }}{85}{figure.caption.93}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Table with horizontal line\relax }}{85}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Package meno\relax }}{86}{figure.caption.95}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces HostMath's latex equation editor\relax }}{106}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces CodeCogs's latex equation editor\relax }}{107}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces ACM Digital Library例子\relax }}{110}{figure.caption.117}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces BibTex的位置\relax }}{110}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces BibTex資料\relax }}{111}{figure.caption.119}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces 整理/使用BibTex\relax }}{111}{figure.caption.120}%
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\addvspace {10 pt}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces opacity使用預設\relax }}{241}{figure.caption.139}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces 測試opacity=0.4\relax }}{241}{figure.caption.140}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces opacity使用預設\relax }}{242}{figure.caption.141}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces 測試opacity=0.4\relax }}{242}{figure.caption.142}%
+\addvspace {10 pt}
+\addvspace {10 pt}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Ref用figure\relax }}{247}{figure.caption.145}%
+\addvspace {10 pt}
+\addvspace {10 pt}

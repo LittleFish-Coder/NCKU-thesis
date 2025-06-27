@@ -1,0 +1,653 @@
+GemGNN: Generative Multi-view Interaction Graph 
+Neural Networks for Few-shot Fake News Detection
+
+生成式多視角互動圖神經網路之少樣本假新聞偵測
+
+學生: 余振揚(Chen-Yang Yu)
+指導教授: 李政德(Cheng-Te Li)
+
+
+Outline
+
+● Introduction & Challenges
+● Related Work
+● Background (Few-Shot Learning / GNN)
+● Our Approach vs. Existing Methods
+● Methodology
+● Experiments
+● Results
+● Ablation Study
+● Conclusion
+
+2
+
+
+Introduction - Fake News
+
+● Fake news has become a major 
+threat to public trust and social 
+stability, especially on social media 
+platforms.
+
+● According to Vosoughi et al. 
+(Science, 2018), false news 
+spreads much faster and further 
+than true news.
+
+Vosoughi S, Roy D, Aral S. The spread of true and false news online. Science. 2018;359(6380):1146–1151. doi: 10.1126/science.aap9559.
+
+3
+
+
+Challenges - Few-Shot Fake News Detection
+
+● Limited Labeled Data: 
+
+Real-world fake news detection often faces a few-shot scenario, with very few 
+labeled examples available for new or emerging topics.
+
+● No Propagation or User Data: 
+
+Many existing methods rely on user interactions or propagation structures, 
+which are often unavailable due to privacy concerns or platform restrictions.
+
+● Semantic Relationship Modeling: 
+
+Capturing subtle and meaningful semantic relationships between news 
+articles using only content features is diﬃcult, especially in sparse data 
+settings.
+
+4
+
+
+Related Work - Traditional Model (MLP/LSTM)
+
+● MLP:
+
+Early Feature Engineering Approaches - TF-IDF/n-gram + MLP
+
+● LSTM & RNN:
+
+Sequential Modeling Advantages - Captures long-term dependencies in text
+
+Social Media Fake News Detection Using Machine Learning Models and Feature Extraction Techniques
+Enhanced Fake News Detection with Bi-LSTM Networks and TF-IDF
+
+5
+
+
+Related Work - Language Model
+
+BERT & Transformer Architecture(Encoder)
+● Bidirectional Context Understanding:
+
+○ Masked Language Model (MLM) pre-training
+○ Natural Language Understanding(NLU)
+
+● Fine-tuning Paradigm:
+
+○
+
+Task-speciﬁc adaptation with minimal architecture changes
+
+6
+
+
+Related Work - Large Language Model
+
+● Zero-shot Learning Capabilities:
+
+Leverages pre-trained knowledge for novel tasks
+
+○
+○ Direct application to fake news detection without ﬁne-tuning
+
+● In-context Learning (Few-shot Demonstrations):
+
+○
+○
+
+Learn from K=1-5 examples within context window
+Rapid adaptation to new domains and topics
+
+7
+
+
+Related Work - Document-level Graph Classiﬁcation
+
+● Heterogeneous Graph Design:
+
+○ Documents and vocabulary words as different node types
+○ Global co-occurrence patterns across entire corpus
+
+● Graph Classiﬁcation Task:
+
+Each document corresponds to one graph structure
+
+○
+○ Classify entire document graph as real/fake
+
+● Key Limitations:
+
+Large Data Requirements - Poor few-shot performance
+
+○
+○ Missing Document Relationships - Focus on word-level connections
+
+Yao et al., “Graph Convolutional Networks for Text Classiﬁcation”, AAAI 2019
+
+8
+
+
+Related Work - Node Classiﬁcation w/ User Propagation
+
+● Propagation-based Modeling:
+
+○ Message Passing Mechanism
+○
+
+Temporal Dynamics
+
+● Semi-supervised Node Classiﬁcation Task:
+
+○ User-news interaction graph
+○ Node Features: User proﬁles + News content embeddings
+
+● Key Limitations:
+
+Privacy Concerns - Requires user interaction data, raising privacy issues
+
+○
+○ Data Availability - Diﬃculty obtaining social media platform data
+○ Cold Start Problem - Emerging topics lack suﬃcient propagation data
+
+Wu et al., “DECOR: Degree-Corrected Social Graph Reﬁnement for Fake News Detection”, KDD 2023
+
+9
+
+
+Background - Few-Shot Learning
+
+● Deﬁnition:
+
+○
+
+Few-shot learning is a machine learning framework in which an AI model learns to make 
+accurate predictions by training on a very small number of labeled examples.
+
+● Key Terminology:
+
+○ N-way-K-shot: Classiﬁcation with N classes, K examples per class
+○
+
+In our task: 2-way (real/fake news) with K=3-16 labeled samples per class
+
+● Key Challenges:
+
+Traditional deep learning requires large labeled datasets
+
+○
+○ Model overﬁtting when training data is scarce
+
+10
+
+
+Background - Graph Neural Network(GNN)
+
+Graph Neural Networks (GNNs) are a class of deep learning models designed to 
+operate on graph-structured data, where information is represented as nodes 
+connected by edges.
+
+Message Passing
+
+GNNs iteratively update each node’s representation 
+by  aggregating  information  from  its  neighbors, 
+enabling the model to capture both local and global 
+graph structure.
+
+Veličković et al., "Graph Attention Networks," ICLR 2018, arXiv:1710.10903
+
+11
+
+
+Our Approach vs. Existing Methods
+
+Method
+
+Core Mechanism
+
+Data Requirements
+
+Limitation
+
+Languge Model
+
+Fine-tuning pre-trained 
+encoders
+
+Large labeled datasets
+
+High annotation cost for 
+task-speciﬁc data
+
+LLM
+
+Zero-shot & in-context learning 
+via prompts
+
+None for zero-shot
+Few examples for in-context
+
+Limited control over reasoning; 
+potential hallucinations
+
+Document-Level
+Graph Classiﬁcaiton
+
+Text‐GCN, BERT‐GCN: 
+document-word 
+heterogeneous graphs
+
+Large corpora with word 
+co-occurrences
+
+Static co-occurrence; misses 
+direct document–document 
+semantics
+
+User-Propagation
+Node Classiﬁcation
+
+user–news interaction graphs
+
+Social interaction logs
+
+Ours (GemGNN)
+
+Generative Interaction from 
+pure news content
+
+News Content only
+
+Privacy issues; 
+data availability; 
+cold start on new topics
+
+Relies on quality of 
+embedding similarity
+
+12
+
+
+Methodology - Architecture
+
+13
+
+
+Methodology - Input Data
+
+14
+
+
+Methodology - Text Encoder
+
+Each news is encoded as a node in our graphs using DeBERTa Embeddings
+
+15
+
+
+Methodology - User Interaction
+
+16
+
+
+Methodology - News Interaction Node
+
+Each news has 20 interactions with 
+different tones: 
+
+- Neutral * 8
+- Aﬃrmative * 7
+- Skeptical * 5
+
+tone is encoded as attribute when 
+creating the edge
+
+17
+
+
+Methodology - Edge Construction (Test Isolated KNN)
+
+● For Real/Fake/Unlabeled Nodes:
+
+Select top k nearest nodes for each 
+src nodes.
+
+● We disable test nodes connect to 
+
+other test nodes
+
+18
+
+
+Methodology - Edge Construction (Multi-View)
+
+We divide embeddings into 3 subsets
+
+Enable each node redo the test isolated 
+KNN strategy
+
+MultiView gives more information on 
+different point of view
+
+19
+
+
+Methodology - Multi-Graph
+
+For each graph, there exists nodes:
+
+- K real/fake
+- 2*k*M(5) train unlabeled
+- B(50) test nodes
+
+20
+
+
+Methodology - Transductive Learning
+
+● Key Principle: 
+
+○ All nodes (labeled + unlabeled + test) participate in 
+
+message passing
+
+○ Only labeled nodes contribute to loss calculation
+○ Unlabeled data assists in representation learning
+
+● Few-Shot Learning Advantage:
+
+○
+○
+
+Leverages graph structure with limited labeled data
+Improves generalization through neighborhood information
+
+21
+
+
+Methodology - GNN Layer (HAN / GAT)
+
+We use Heterogenous Graph Attention Network for our base model
+● Computes dynamic attention coeﬃcients (αij) unlike traditional GCNs
+● Selectively aggregates information from semantically relevant neighbors  
+● Focuses on discriminative relationships crucial for few-shot learning
+● Adapts to varying importance of news document connections
+
+22
+
+
+Methodology - GNN Layer (HAN)
+
+We use Heterogenous Graph Attention Network for our base model
+● Supports multiple node and edge types (news, interaction, topic, etc.)
+● Type-speciﬁc attention: learns importance of each neighbor type
+● Hierarchical aggregation: meta-path or edge-type level fusion
+● Captures complex semantic relations among news, entities, and topics
+
+23
+
+
+Methodology - Loss & Output
+
+● Cross-Entropy Loss (Labeled Nodes Only)
+
+● Output:
+
+Binary Classiﬁcation: Real(0) vs Fake(1)
+
+○
+○ Node-level predictions on test set
+○
+
+F1-Score evaluation metric
+
+24
+
+
+Methodology - Architecture
+
+25
+
+
+Experiments - Dataset from FakeNewsNet (Benchmark)
+
+Dataset
+
+PolitiFact
+
+(4:1)
+
+GossipCop
+
+(8:2)
+
+Key Features:
+
+Split
+
+Train
+
+Test
+
+Train
+
+Test
+
+Real
+
+246
+
+73
+
+7955
+
+2169
+
+Fake
+
+135
+
+29
+
+2033
+
+503
+
+Total
+
+381
+
+102
+
+9988
+
+2672
+
+● Professional verification: Labels verified by fact-checkers
+● Content-only: We use only news text (no social context)
+● Benchmark standard: Widely used in fake news research
+
+[Shu et al., ASONAM 2018]
+
+26
+
+
+Experiments - Train Labeled / Train Unlabeled / Test Set
+
+N-way-K-shot Learning: 
+N: 2 (real / fake), K: 3 ~ 16 (K samples per class)
+
+Category
+
+Traditional
+
+Methods
+
+MLP, LSTM
+
+Description
+
+Using RoBERTa embeddings
+
+Language Models
+
+BERT, RoBERTa
+
+Fine-tuned for classification
+
+LLM
+
+Llama, Gemma
+
+In-Context Learning
+
+Graph Methods
+
+Less4FD, HeteroSGT
+
+TBA
+
+Our Method
+
+GenAI + Test-Isolated KNN +
+Multi-View + Multi-Graph
+
+Utilize LLM to enrich the content-based 
+graph construction
+
+27
+
+
+Results - PolitiFact
+
+澄清一下，our performance最終是平均落在0.81
+
+28
+
+
+Results - GossipCop
+
+澄清一下，our performance最終是平均落在0.61
+
+29
+
+
+Results on LLM
+
+LLM may have seen 
+the dataset
+
+30
+
+
+Ablation Study
+
+Our work introduces 5 key components:
+
+- Generative User Propagation
+- Test Isolated KNN
+- Ensure Test-Train Neighborhood
+- Multi-View
+- Multi-Graph
+
+31
+
+
+Ablation Study - PolitiFact / 8-shot
+
+32
+
+
+Ablation Study - GossipCop / 8-shot
+
+33
+
+
+Conclusion
+
+● Key Contributions
+
+○
+
+Introduced a generative graph enrichment method using an LLM (Gemini) to synthesize user 
+interactions, overcoming the data dependency of traditional propagation-based models.
+
+○ Developed a Test-Isolated KNN edge construction strategy  that enforces a stricter, more 
+
+realistic evaluation by preventing information leakage among test nodes.
+
+● Key Insights
+
+○
+Transductive learning effectively leverages unlabeled data to improve feature representation
+○ Multi-View provides a holistic understanding of similarity, forcing the model to learn from 
+
+diverse semantic perspectives within the news content.
+
+○ Multi-Graph training acts as graph-level data augmentation, exposing the model to varied 
+
+structural contexts to learn more robust and generalizable features.
+
+34
+
+
+Future Work
+
+With 
+
+35
+
+
+Thanks
+
+36
+
+
+Feedback
+
+Introduction: component 解決哪些challenge (contribution)
+
+- 用 column 來呈現各model有什麼feature
+- Problem Statement, Notation
+- 研究問題(Problem Statement)
+- Few-Shot Learning 當 background
+-
+- Why related work can’t do well on few-shot learning
+- Our Approach (Unsupervised or Supervised)
+- why DeBERTa not RoBERTa
+- Dataset 重組
+- Page 16, 17: why tones? why interaction(motivation)?
+- Page 18: why test-isolated KNN 
+
+37
+
+
+Feedback
+
+- Why not single-graph (Motivation)
+- more GNN related work
+- Highlight Loss
+- Page 30, how contamination
+- Ablation Study (Homogenous GenAI)
+- HyperParameters
+- Base GNN
+
+38
+
+
+Feedback
+
+Problem Statement
+
+39
