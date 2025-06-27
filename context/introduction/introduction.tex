@@ -2,7 +2,63 @@
 \StartChapter{Introduction}{chapter:introduction}
 % ------------------------------------------------
 
-Write your introduction here.
+\section{Research Background and Motivation}
+
+In the digital age, the proliferation of fake news has emerged as one of the most pressing challenges threatening information integrity and democratic discourse. According to Vosoughi et al. \cite{vosoughi2018spread}, false news spreads six times faster than true news on social media platforms, reaching more people and penetrating deeper into social networks. This phenomenon has far-reaching consequences, from influencing electoral outcomes to undermining public health responses during critical events such as the COVID-19 pandemic.
+
+Traditional approaches to fake news detection have relied heavily on two primary paradigms: content-based analysis and propagation-based modeling. Content-based methods analyze linguistic features, semantic patterns, and textual inconsistencies within news articles, while propagation-based approaches examine how information spreads through social networks by modeling user interactions, sharing patterns, and network topology. However, both paradigms face significant limitations in real-world deployment scenarios.
+
+The most critical challenge in contemporary fake news detection is the few-shot learning problem, where detection systems must accurately classify news articles with minimal labeled training data. This scenario is particularly common when dealing with emerging topics, breaking news events, or novel misinformation campaigns where extensive labeled datasets are not readily available. Traditional deep learning approaches, which typically require thousands of labeled examples per class, fail to perform adequately in such data-scarce environments.
+
+Furthermore, existing propagation-based methods, while often achieving high performance, suffer from fundamental practical limitations. These approaches require access to comprehensive user interaction data, including social network structures, user profiles, and temporal propagation patterns. Such data is increasingly difficult to obtain due to privacy regulations, platform restrictions, and the real-time nature of misinformation spread. Additionally, these methods are vulnerable to sophisticated adversarial attacks where malicious actors can manipulate propagation patterns to evade detection.
+
+\section{Problem Statement and Challenges}
+
+This thesis addresses the fundamental problem of few-shot fake news detection in scenarios where traditional propagation data is unavailable or unreliable. Formally, we define our problem as follows:
+
+\textbf{Problem Definition:} Given a small set of labeled news articles $\mathcal{L} = \{(x_i, y_i)\}_{i=1}^{K \times C}$ where $K$ represents the number of examples per class and $C$ denotes the number of classes (real/fake), and a larger set of unlabeled news articles $\mathcal{U} = \{x_j\}_{j=1}^{M}$, the objective is to learn a classifier $f: \mathcal{X} \rightarrow \mathcal{Y}$ that can accurately predict labels for test instances $\mathcal{T} = \{x_k\}_{k=1}^{N}$ where $K \ll M$ and $K \ll N$.
+
+The core challenges that motivate this research include:
+
+\textbf{Limited Labeled Data:} Few-shot scenarios typically provide only 3-16 labeled examples per class, insufficient for training robust deep learning models using conventional approaches. This data scarcity leads to overfitting, poor generalization, and unstable performance across different domains.
+
+\textbf{Absence of Propagation Information:} Real-world deployment often lacks access to user interaction data due to privacy constraints, platform limitations, or the time-sensitive nature of misinformation detection. Existing propagation-based methods become inapplicable in such contexts.
+
+\textbf{Semantic Complexity:} Fake news articles often exhibit sophisticated linguistic patterns and may contain accurate factual information presented in misleading contexts. Simple content-based features fail to capture these nuanced semantic relationships.
+
+\textbf{Domain Generalization:} Models trained on specific topics or domains often fail to generalize to emerging misinformation patterns or novel subject areas, limiting their practical applicability.
+
+\textbf{Evaluation Realism:} Many existing few-shot learning approaches suffer from information leakage between training and test sets, leading to overly optimistic performance estimates that do not reflect real-world deployment scenarios.
+
+\section{Research Contributions}
+
+This thesis presents GemGNN (Generative Multi-view Interaction Graph Neural Networks), a novel framework that addresses the aforementioned challenges through several key contributions:
+
+\textbf{Generative User Interaction Simulation:} We introduce the first approach to synthesize realistic user interactions using Large Language Models (LLMs), specifically leveraging Gemini to generate diverse user responses with multiple emotional tones (neutral, affirmative, skeptical). This innovation eliminates the dependency on real propagation data while maintaining the benefits of interaction-based modeling.
+
+\textbf{Test-Isolated KNN Edge Construction:} We develop a novel graph construction strategy that prevents information leakage between test nodes through strict isolation constraints. This approach ensures more realistic evaluation by prohibiting test nodes from connecting to each other, addressing a critical flaw in existing graph-based few-shot learning methods.
+
+\textbf{Multi-View Graph Architecture:} We propose a multi-view learning framework that partitions news embeddings into multiple semantic perspectives, enabling the model to capture diverse aspects of news content. Each view constructs its own graph structure, and multiple graphs are trained simultaneously to provide comprehensive data augmentation.
+
+\textbf{Enhanced Heterogeneous Graph Neural Networks:} We design a specialized HAN-based architecture that effectively models the complex relationships between news articles and generated user interactions through type-specific attention mechanisms and hierarchical aggregation strategies.
+
+\textbf{Comprehensive Evaluation Framework:} We establish rigorous experimental protocols that ensure fair comparison with existing methods while maintaining realistic few-shot learning constraints across multiple datasets and evaluation metrics.
+
+\section{Thesis Organization}
+
+The remainder of this thesis is organized as follows:
+
+\textbf{Chapter 2: Related Work} provides a comprehensive review of existing fake news detection methods, including traditional feature-engineering approaches, deep learning techniques, graph-based methods, and few-shot learning strategies. We analyze the limitations of current approaches and position our work within the broader research landscape.
+
+\textbf{Chapter 3: Background and Preliminaries} introduces the fundamental concepts underlying our approach, including few-shot learning formulations, graph neural network architectures, and problem notation. This chapter establishes the theoretical foundation necessary for understanding our methodology.
+
+\textbf{Chapter 4: Methodology} presents the complete GemGNN framework, detailing the generative user interaction simulation, test-isolated KNN construction, multi-view graph architecture, and the heterogeneous graph neural network design. We provide comprehensive algorithmic descriptions and theoretical justifications for each component.
+
+\textbf{Chapter 5: Experimental Setup} describes our experimental methodology, including dataset preprocessing, baseline method implementations, evaluation protocols, and hyperparameter configurations. We ensure reproducibility and fair comparison across all experimental conditions.
+
+\textbf{Chapter 6: Results and Analysis} presents comprehensive experimental results, including main performance comparisons, ablation studies, and detailed analysis of model behavior. We provide insights into why our approach succeeds in few-shot scenarios and identify the key factors contributing to performance improvements.
+
+\textbf{Chapter 7: Conclusion and Future Work} summarizes our contributions, discusses the implications of our findings, acknowledges current limitations, and outlines promising directions for future research in few-shot fake news detection.
 
 % ------------------------------------------------
 \EndChapter

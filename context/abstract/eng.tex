@@ -2,7 +2,15 @@
 \StartAbstract
 % ------------------------------------------------
 
-Write your abstract here.
+Fake news has become a critical threat to information integrity and social stability, particularly in few-shot scenarios where limited labeled data is available for emerging topics or misinformation campaigns. Traditional fake news detection methods rely heavily on user propagation patterns or require extensive labeled datasets, making them impractical for real-world deployment where such data is scarce or unavailable. This thesis presents GemGNN (Generative Multi-view Interaction Graph Neural Networks), a novel framework for few-shot fake news detection that addresses these fundamental limitations through content-based graph neural network modeling.
+
+Our approach introduces three key innovations: First, we develop a generative user interaction simulation method using Large Language Models (LLMs) to synthesize diverse user interactions with multiple tones (neutral, affirmative, skeptical), effectively overcoming the dependency on real user propagation data. Second, we propose a Test-Isolated K-Nearest Neighbor (KNN) edge construction strategy that prevents information leakage between test nodes, ensuring more realistic and robust evaluation in few-shot scenarios. Third, we implement a multi-view graph construction approach that splits news embeddings into multiple semantic perspectives, combined with multi-graph training for enhanced data augmentation.
+
+The GemGNN framework employs Heterogeneous Graph Attention Networks (HAN) to model complex relationships between news articles and generated user interactions through dynamic attention mechanisms. Our transductive learning approach leverages both labeled and unlabeled data during message passing while restricting loss computation to labeled nodes only, maximizing the utility of limited supervision.
+
+Extensive experiments on the FakeNewsNet datasets (PolitiFact and GossipCop) demonstrate that GemGNN significantly outperforms state-of-the-art methods across various few-shot configurations (K=3-16). Our method achieves superior F1-scores compared to traditional approaches (MLP, LSTM), transformer-based models (BERT, RoBERTa), large language models (LLaMA, Gemma), and existing graph-based methods (Less4FD, HeteroSGT). Comprehensive ablation studies validate the effectiveness of each component, showing that the combination of generative interactions, test-isolated KNN, and multi-view construction provides substantial improvements in few-shot fake news detection performance.
+
+The contributions of this work establish a new paradigm for content-based fake news detection that eliminates dependency on user behavior data while maintaining superior performance in data-scarce scenarios, making it particularly suitable for privacy-sensitive applications and emerging misinformation detection tasks.
 
 % ------------------------------------------------
 \EndAbstract
