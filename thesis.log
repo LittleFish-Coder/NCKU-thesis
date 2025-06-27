@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2025.6.18)  27 JUN 2025 02:17
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2025.6.18)  27 JUN 2025 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,7 +1154,7 @@ dflt;embolden=4;slant=0.167;mapping=tex-text;"
 \c@EnvQuestion=\count375
 \c@EnvHypothesis=\count376
 )
-No file thesis.aux.
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1168,7 +1168,7 @@ LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 5.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -1298,12 +1298,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
+
+(./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -1318,7 +1317,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(./example/context.tex (./template/cover/inner.tex
+(./context/context.tex (./template/cover/inner.tex
 (./template/cover/cover-eng.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
@@ -1437,72 +1436,31 @@ File: ./template/style/ncku/watermark-20160509_v2-a4.pdf Graphic file (type pdf
 <use ./template/style/ncku/watermark-20160509_v2-a4.pdf>
 [3
 
-])) (./example/abstract/chi.tex
+])) (./context/abstract/eng.tex [1
 
-LaTeX Warning: Reference `appendix:thesis-spec' on page i undefined on input li
-ne 5.
-
-
-LaTeX Warning: Reference `appendix:acceptable-dept' on page i undefined on inpu
-t line 7.
-
-[1
-
-]) (./example/abstract/eng.tex [2
-
-]) (./context/abstract/extended.tex
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 7.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-
- []
-
+] [2]) (./context/acknowledgments/eng.tex
 [3
 
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 66.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 66.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 66.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 71.
-File: ./example/abstract/pic/extended-abstract-2.jpg Graphic file (type bmp)
-<./example/abstract/pic/extended-abstract-2.jpg>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 71.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 71.
- [4] [5]) (./example/acknowledgments/chi.tex [6
+] [4]) (./thesis.toc [5
 
-])
-(./example/acknowledgments/eng.tex [7
-
-])
+] [6])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [8
-
-]
+ [7] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [9
+ [8
 
-]
+] (./thesis.lof [9
+
+])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [10
 
-]
-(./example/nomenclature/nomenclature.tex
+[10] (./example/nomenclature/nomenclature.tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
@@ -1524,3236 +1482,266 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 33.
 [11
 
-]) (./example/introduction/introduction.tex
+]) (./context/introduction/introduction.tex
 
-LaTeX Warning: Reference `appendix:thesis-spec' on page 1 undefined on input li
-ne 5.
-
-
-LaTeX Warning: Reference `appendix:acceptable-dept' on page 1 undefined on inpu
-t line 7.
+LaTeX Warning: Citation `vosoughi2018spread' on page 1 undefined on input line 
+7.
 
 
-LaTeX Warning: Reference `chapter:words-from-professor' on page 1 undefined on 
-input line 15.
+Overfull \hbox (1.21947pt too wide) in paragraph at lines 9--10
+\TU/TimesKaiuEngFont(0)/m/n/12 modeling user interactions, sharing patterns, an
+d network topology. However, both paradigms
+ []
 
 [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+] [2] [3] [4]) (./context/related-work/related-work.tex
 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 33.
-File: ./example/introduction/pic/by-nc-sa.png Graphic file (type bmp)
-<./example/introduction/pic/by-nc-sa.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 33.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 33.
-
-LaTeX Warning: Citation `web:this-project:github' on page 2 undefined on input 
-line 35.
+LaTeX Warning: Citation `perez2017automatic' on page 5 undefined on input line 
+13.
 
 
-LaTeX Warning: Citation `web:this-project:github' on page 2 undefined on input 
-line 37.
+LaTeX Warning: Citation `wang2017liar' on page 5 undefined on input line 13.
 
 
-Overfull \hbox (20.20493pt too wide) in paragraph at lines 37--38
-[]\TU/TimesKaiuEngFont(0)/m/n/12 This work(ncku-thesis-template-latex[[]]) is l
-icensed under Creative Commons Attribution-
+Overfull \hbox (8.01253pt too wide) in paragraph at lines 13--14
+\TU/TimesKaiuEngFont(0)/m/n/12 Term Frequency-Inverse Document Frequency (TF-ID
+F) representations combined with Multi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
+LaTeX Warning: Citation `horne2017just' on page 5 undefined on input line 17.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+LaTeX Warning: Citation `rashkin2017truth' on page 5 undefined on input line 17
+.
 
- []
-
-[2]) (./example/objective/objective.tex
-
-LaTeX Warning: Citation `web:latex:template:ntust' on page 3 undefined on input
- line 22.
-
-
-LaTeX Warning: Citation `web:latex:template:ntu' on page 3 undefined on input l
-ine 22.
-
-
-LaTeX Warning: Citation `web:latex:yzu' on page 3 undefined on input line 22.
-
-
-LaTeX Warning: Citation `web:latex:ncku_math_introduction' on page 3 undefined 
-on input line 24.
-
-
-LaTeX Warning: Citation `web:latex:ncku_math_forum' on page 3 undefined on inpu
-t line 24.
-
-
-LaTeX Warning: Citation `web:latex:cwtex' on page 3 undefined on input line 47.
-
-
-[3
-
-]
-
-LaTeX Warning: Citation `web:latex:cwtex' on page 4 undefined on input line 88.
-
-
-
-LaTeX Warning: Reference `appendix:thesis-spec' on page 4 undefined on input li
-ne 99.
-
-
-Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
-(xeCJK)                
-(xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
-
-[4]) (./example/how-to/use/use.tex (./example/how-to/use/intro/intro.tex
-
-LaTeX Warning: Citation `web:this-project:github' on page 5 undefined on input 
-line 10.
-
-
-LaTeX Warning: Reference `fig:how-to:use:intro:github' on page 5 undefined on i
-nput line 10.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 16.
-File: ./example/how-to/use/intro/pic/github.png Graphic file (type bmp)
-<./example/how-to/use/intro/pic/github.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 16.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 16.
-
-LaTeX Warning: Reference `fig:how-to:use:intro:github-download' on page 5 undef
-ined on input line 18.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 23.
-File: ./example/how-to/use/intro/pic/github-download.png Graphic file (type bmp
-)
-<./example/how-to/use/intro/pic/github-download.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 23.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 23.
 [5
 
 ]
 
-LaTeX Warning: Reference `chapter:how-to:use:generate' on page 6 undefined on i
-nput line 42.
+LaTeX Warning: Citation `ma2016detecting' on page 6 undefined on input line 23.
 
-) [6] (./example/how-to/use/source-tree.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
+
+LaTeX Warning: Citation `yu2017convolutional' on page 6 undefined on input line
+ 23.
+
+
+Overfull \hbox (0.71219pt too wide) in paragraph at lines 23--24
+\TU/TimesKaiuEngFont(0)/m/n/12 words. Long Short-Term Memory (LSTM) networks an
+d Recurrent Neural Networks (RNNs)
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 7.
-) [7] (./example/how-to/use/build/build.tex
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 13.
-File: ./example/how-to/use/build/pic/miktex/logo.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/miktex/logo.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 13.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 13.
+
+LaTeX Warning: Citation `wang2018eann' on page 6 undefined on input line 27.
 
 
-LaTeX Warning: Citation `web:miktex:website' on page 8 undefined on input line 
-15.
+LaTeX Warning: Citation `liu2018early' on page 6 undefined on input line 27.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 20.
-File: ./example/how-to/use/build/pic/miktex/mdownload.png Graphic file (type bm
-p)
-<./example/how-to/use/build/pic/miktex/mdownload.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 20.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-File: ./example/how-to/use/build/pic/miktex/minstall.png Graphic file (type bmp
-)
-<./example/how-to/use/build/pic/miktex/minstall.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 25.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 25.
 
-LaTeX Warning: Reference `fig:how-to:use:build:package-download' on page 8 unde
-fined on input line 27.
+LaTeX Warning: Citation `kula2021survey' on page 6 undefined on input line 37.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 33.
-File: ./example/how-to/use/build/pic/miktex/auto-download.png Graphic file (typ
-e bmp)
-<./example/how-to/use/build/pic/miktex/auto-download.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 33.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 33.
+
+LaTeX Warning: Citation `kaliyar2021fakebert' on page 6 undefined on input line
+ 37.
+
+[6]
+
+LaTeX Warning: Citation `wright2020domain' on page 7 undefined on input line 43
+.
+
+
+LaTeX Warning: Citation `silva2021cross' on page 7 undefined on input line 43.
+
+
+LaTeX Warning: Citation `chen2023combating' on page 7 undefined on input line 4
+9.
+
+
+LaTeX Warning: Citation `openai2023gpt4' on page 7 undefined on input line 49.
+
+
+LaTeX Warning: Citation `wang2023survey' on page 7 undefined on input line 53.
+
+[7]
+
+LaTeX Warning: Citation `yao2019graph' on page 8 undefined on input line 63.
+
+
+LaTeX Warning: Citation `liu2020early' on page 8 undefined on input line 63.
+
+
+LaTeX Warning: Citation `lin2021bertgcn' on page 8 undefined on input line 67.
+
+
+LaTeX Warning: Citation `shu2017fake' on page 8 undefined on input line 73.
+
+
+LaTeX Warning: Citation `zhou2020survey' on page 8 undefined on input line 73.
+
+
+LaTeX Warning: Citation `ma2016detecting' on page 8 undefined on input line 77.
+
+
+
+LaTeX Warning: Citation `liu2018early' on page 8 undefined on input line 77.
+
 [8]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-File: ./example/how-to/use/build/pic/miktex/installing.png Graphic file (type b
-mp)
-<./example/how-to/use/build/pic/miktex/installing.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 40.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 40.
- [9]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 49.
-File: ./example/how-to/use/build/pic/miktex/version-too-old.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/version-too-old.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 49.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 49.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
-File: ./example/how-to/use/build/pic/miktex/windows-start.png Graphic file (typ
-e bmp)
-<./example/how-to/use/build/pic/miktex/windows-start.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 57.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 57.
- [10]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 65.
-File: ./example/how-to/use/build/pic/miktex/miktex-update-1.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/miktex-update-1.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 65.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 65.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 72.
-File: ./example/how-to/use/build/pic/miktex/miktex-update-2.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/miktex-update-2.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 72.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 72.
- [11]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 80.
-File: ./example/how-to/use/build/pic/miktex/miktex-update-3.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/miktex-update-3.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 80.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 80.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 87.
-File: ./example/how-to/use/build/pic/miktex/miktex-update-4.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/miktex-update-4.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 87.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 87.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-File: ./example/how-to/use/build/pic/miktex/miktex-update-5.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/miktex-update-5.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 94.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 94.
- [12]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 101.
-File: ./example/how-to/use/build/pic/miktex/miktex-update-6.png Graphic file (t
-ype bmp)
-<./example/how-to/use/build/pic/miktex/miktex-update-6.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 101.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 101.
- [13]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 114.
-File: ./example/how-to/use/build/pic/texmaker/logo.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/logo.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 114.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 114.
 
+LaTeX Warning: Citation `dou2021user' on page 9 undefined on input line 83.
 
-LaTeX Warning: Citation `web:texmaker:website' on page 14 undefined on input li
-ne 116.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 121.
-File: ./example/how-to/use/build/pic/texmaker/download.png Graphic file (type b
-mp)
-<./example/how-to/use/build/pic/texmaker/download.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 121.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 121.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 128.
-File: ./example/how-to/use/build/pic/texmaker/install.png Graphic file (type bm
-p)
-<./example/how-to/use/build/pic/texmaker/install.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 128.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 128.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 133.
-File: ./example/how-to/use/build/pic/texmaker/install-2.png Graphic file (type 
-bmp)
-<./example/how-to/use/build/pic/texmaker/install-2.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 133.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 133.
-[14]
+LaTeX Warning: Citation `lu2020gcan' on page 9 undefined on input line 83.
 
-LaTeX Warning: Reference `fig:how-to:use:build:texmaker:thesis.tex' on page 15 
-undefined on input line 141.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 147.
-File: ./example/how-to/use/build/pic/texmaker/1.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/1.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 147.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 147.
+LaTeX Warning: Citation `less4fd2023' on page 9 undefined on input line 87.
 
-LaTeX Warning: Reference `fig:how-to:use:build:texmaker:to_xelatex' on page 15 
-undefined on input line 149.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 155.
-File: ./example/how-to/use/build/pic/texmaker/2.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/2.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 155.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 155.
-[15]
+LaTeX Warning: Citation `heterosgt2023' on page 9 undefined on input line 87.
 
-LaTeX Warning: Reference `fig:how-to:use:build:texmaker:gen_message' on page 16
- undefined on input line 158.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 164.
-File: ./example/how-to/use/build/pic/texmaker/2-5.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/2-5.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 164.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 164.
+LaTeX Warning: Citation `finn2017model' on page 9 undefined on input line 97.
 
-LaTeX Warning: Reference `fig:how-to:use:build:texmaker:new_pdf' on page 16 und
-efined on input line 166.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 172.
-File: ./example/how-to/use/build/pic/texmaker/3.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/3.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 172.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 172.
-[16]
+LaTeX Warning: Citation `bansal2020self' on page 9 undefined on input line 97.
 
-LaTeX Warning: Reference `fig:how-to:use:build:texmaker:cover.tex' on page 17 u
-ndefined on input line 175.
+[9]
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 181.
-File: ./example/how-to/use/build/pic/texmaker/4.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/4.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 181.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 181.
+LaTeX Warning: Citation `snell2017prototypical' on page 10 undefined on input l
+ine 101.
 
-LaTeX Warning: Reference `fig:how-to:use:build:texmaker:dir' on page 17 undefin
-ed on input line 183.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 189.
-File: ./example/how-to/use/build/pic/texmaker/5.png Graphic file (type bmp)
-<./example/how-to/use/build/pic/texmaker/5.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 189.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 189.
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+LaTeX Warning: Citation `gao2019fewrel' on page 10 undefined on input line 101.
 
- []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--211
-
- []
-
-) [18] (./example/how-to/use/conf.tex
-Overfull \hbox (1.6223pt too wide) in paragraph at lines 23--26
-\TU/TimesKaiuChiFont(0)/m/n/12 只 能 選 擇 其 中 一 個\TU/TimesKaiuEngFont(0)/m/n/12 , 
-\TU/TimesKaiuChiFont(0)/m/n/12 但 只 有 最 後 設 定 的 一 方 有 效\TU/TimesKaiuEngFont(0)/m
-/n/12 , \TU/TimesKaiuChiFont(0)/m/n/12 預 設 使 用[][]\TU/lmtt/m/n/12 \DisplayCover
-InEng[]\TU/TimesKaiuEngFont(0)/m/n/12 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
-
- []
-
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 135--140
-
- []
-
-
-Overfull \hbox (67.7822pt too wide) in paragraph at lines 158--164
-[][]\TU/lmtt/m/n/12 \SetKeywords{Keyword A (\TU/TimesKaiuChiFont(0)/m/n/12 關鍵字 
-\TU/lmtt/m/n/12 A)}{Keyword B (\TU/TimesKaiuChiFont(0)/m/n/12 關鍵字 \TU/lmtt/m/n/
-12 B)}{Keyword C (\TU/TimesKaiuChiFont(0)/m/n/12 關鍵字 \TU/lmtt/m/n/12 C)} 
- []
-
-[21] [22] [23]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 237.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 259.
- [24]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 276.
-
-Overfull \hbox (0.32193pt too wide) in paragraph at lines 290--290
-[]  \TU/lmtt/m/n/12 SepBetweenSSCnSSS (' \TU/TimesKaiuChiFont(0)/m/n/12 小 節 \TU
-/lmtt/m/n/12 '  \TU/TimesKaiuChiFont(0)/m/n/12 號 碼 跟  \TU/lmtt/m/n/12 ' \TU/Tim
-esKaiuChiFont(0)/m/n/12 小 小 節 \TU/lmtt/m/n/12 '  \TU/TimesKaiuChiFont(0)/m/n/12
- 號 碼 中 間 的 分 隔 符 號 \TU/lmtt/m/n/12 )[] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 294.
-[25]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 318.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 337.
- [26]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 351.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 373.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 393.
- [27]
-Package mdframed Info: Not enough space on this page on input line 426.
- [28]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 434.
- [29]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 459.
- [30]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 490.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 502.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 512.
- [31]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 520.
- [32]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 554.
- [33]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 574.
- [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 631.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 638.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 646.
-[36]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 677.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 677.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 677.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 679.
-
-
-LaTeX Warning: Citation `web:bibstyle:latex-basic' on page 37 undefined on inpu
-t line 693.
-
-
-LaTeX Warning: Citation `web:bibstyle:apacite' on page 37 undefined on input li
-ne 693.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--697
-
- []
-
-[37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 720--721
-
- []
-
-
-LaTeX Warning: Citation `web:school:academics' on page 39 undefined on input li
-ne 722.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--725
-
- []
-
-[39]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (10.34285pt too wide) in paragraph at lines 1330--1448
- [] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [40] [41] [42] [43] [44]) (./example/how-to/write/write.tex
-
-LaTeX Warning: Citation `web:latex:wikibooks' on page 45 undefined on input lin
-e 21.
-
-
-LaTeX Warning: Citation `web:latex:latex123' on page 45 undefined on input line
- 22.
-
-[45
-
-] (./example/how-to/write/basic/basic.tex
-(./example/how-to/write/basic/text.tex
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 17.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 29.
-) [46]
-(./example/how-to/write/basic/list.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 13.
-[47]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 64.
- [48]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 118.
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 145.
-[50]) [51] (./example/how-to/write/basic/label.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 30.
-
-LaTeX Warning: Reference `fig:example:mi2:mfig' on page 53 undefined on input l
-ine 54.
-
-
-LaTeX Warning: Reference `chapter:how-to:write:table:label-example' on page 53 
-undefined on input line 56.
-
-
-LaTeX Warning: Reference `chapter:how-to:write:equation:label-example' on page 
-53 undefined on input line 58.
-
-) [53] (./example/how-to/write/basic/comment.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 9.
-) [54] (./example/how-to/write/basic/other.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-)) [55] (./example/how-to/write/chapter/chapter.tex
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
- [56]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 53.
-) [57] (./example/how-to/write/figure/figure.tex
-
-LaTeX Warning: Reference `fig:how-to:write:figure:format' on page 58 undefined 
-on input line 7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 13.
-File: ./example/how-to/write/figure/pic/graph-format.png Graphic file (type bmp
-)
-<./example/how-to/write/figure/pic/graph-format.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 13.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 13.
-[58] [59] [60] [61]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 100.
- [62]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 149.
-File: ./example/how-to/write/figure/pic/Cc-by_new.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/Cc-by_new.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 149.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 149.
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 162.
-File: ./example/how-to/write/figure/pic/Cc-by_new.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/Cc-by_new.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 162.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 162.
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 175.
-File: ./example/how-to/write/figure/pic/Cc-by_new.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/Cc-by_new.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 175.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 175.
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
-
- []
-
-[63]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 189.
-File: ./example/how-to/write/figure/pic/Cc-by_new.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/Cc-by_new.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 189.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 189.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 206.
-File: ./example/how-to/write/figure/pic/Cc-by_new.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/Cc-by_new.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 206.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 206.
-
-
-LaTeX Warning: Reference `fig:little-man-no.1' on page 64 undefined on input li
-ne 208.
-
-[64]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 228.
-File: ./example/how-to/write/figure/pic/Cc-by_new.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/Cc-by_new.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 228.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 228.
-
-
-LaTeX Warning: Reference `fig:little-man-no.2' on page 65 undefined on input li
-ne 230.
-
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 249.
-File: ./example/abstract/pic/extended-abstract-2.jpg Graphic file (type bmp)
-<./example/abstract/pic/extended-abstract-2.jpg>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 249.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 249.
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 266.
-File: ./example/abstract/pic/extended-abstract-2.jpg Graphic file (type bmp)
-<./example/abstract/pic/extended-abstract-2.jpg>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 266.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 266.
-[67]
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 280.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 280.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 280.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 292.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 292.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 292.
-[68]
-
-LaTeX Warning: Reference `chapter:how-to:write:table' on page 69 undefined on i
-nput line 298.
-
-File: ./example/how-to/write/figure/pic/apple.jpg Graphic file (type bmp)
-<./example/how-to/write/figure/pic/apple.jpg>
-File: ./example/how-to/write/figure/pic/google.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/google.png>
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 352.
-[70]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 406.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 406.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 406.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 431.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 431--431
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--431
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 431.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 431.
-[71]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 479.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 479--479
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--479
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-SA.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-SA.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--479
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 479.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 479.
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--479
-
- []
-
-
-LaTeX Warning: Reference `fig:example:mi2:mfig' on page 72 undefined on input l
-ine 481.
-
-
-LaTeX Warning: Reference `fig:example:mi2:fig1' on page 72 undefined on input l
-ine 482.
-
-
-LaTeX Warning: Reference `fig:example:mi2:fig2' on page 72 undefined on input l
-ine 482.
-
-[72]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 537.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 537--537
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-SA.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-SA.png>
-File: ./example/how-to/write/figure/pic/CC-BY-ND.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-ND.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 537--537
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 537.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 537.
-
-LaTeX Warning: Reference `fig:example:mi3:mfig' on page 73 undefined on input l
-ine 539.
-
-
-LaTeX Warning: Reference `fig:example:mi3:fig1' on page 73 undefined on input l
-ine 540.
-
-
-LaTeX Warning: Reference `fig:example:mi3:fig3' on page 73 undefined on input l
-ine 542.
-
-
-LaTeX Warning: Reference `fig:example:mi3:fig4' on page 73 undefined on input l
-ine 543.
-
-[73]
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 575.
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 575--575
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-ND.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-ND.png>
-File: ./example/how-to/write/figure/pic/CC-BY-SA.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-SA.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 575--575
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 575--575
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-ND.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-ND.png>
-File: ./example/how-to/write/figure/pic/CC-BY-SA.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-SA.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 575--575
-[]$[]$    $[]$ 
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 575.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 575.
-[74]
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 607.
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 607--607
-[]$[]$    $[]$ 
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 607.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 607.
-[75]
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 639.
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-File: ./example/how-to/write/figure/pic/CC-BY-ND.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-ND.png>
-File: ./example/how-to/write/figure/pic/CC-BY-SA.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-SA.png>
-File: ./example/how-to/write/figure/pic/CC-BY.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY.png>
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-File: ./example/how-to/write/figure/pic/CC-BY-ND.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-ND.png>
-File: ./example/how-to/write/figure/pic/CC-BY-SA.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-SA.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 639.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 639.
-[76]) (./example/how-to/write/table/table.tex
-
-LaTeX Warning: Citation `web:latex:table-generator' on page 77 undefined on inp
-ut line 9.
-
-
-LaTeX Warning: Reference `fig:how-to:table:table-generator' on page 77 undefine
-d on input line 9.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 15.
-File: ./example/how-to/write/table/pic/table-generator.png Graphic file (type b
-mp)
-<./example/how-to/write/table/pic/table-generator.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 15.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 15.
-[77
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 28.
-File: ./example/how-to/write/table/pic/table-view.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/table-view.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 28.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 28.
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 35.
-File: ./example/how-to/write/table/pic/generate.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/generate.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 35.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 35.
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 42.
-File: ./example/how-to/write/table/pic/latex-code.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/latex-code.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 42.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 42.
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-
- []
-
-[78]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 63.
-File: ./example/how-to/write/table/pic/menu-file.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/menu-file.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 63.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 63.
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 75.
-File: ./example/how-to/write/table/pic/csv.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/csv.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 75.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 75.
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-
- []
-
-[79]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 87.
-File: ./example/how-to/write/table/pic/paste.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/paste.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 87.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 87.
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
-
- []
-
-
-LaTeX Warning: Reference `fig:csv:enter-example-data' on page 80 undefined on i
-nput line 89.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-File: ./example/how-to/write/table/pic/paste-data.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/paste-data.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 94.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 94.
-
-LaTeX Warning: Reference `fig:csv:result-example-data' on page 80 undefined on 
-input line 96.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 101.
-File: ./example/how-to/write/table/pic/paste-data-result.png Graphic file (type
- bmp)
-<./example/how-to/write/table/pic/paste-data-result.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 101.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 101.
-[80]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 114.
-File: ./example/how-to/write/table/pic/save-table.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/save-table.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 114.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 114.
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 117.
-File: ./example/how-to/write/table/pic/save-tgn.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/save-tgn.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 117.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 117.
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 129.
-File: ./example/how-to/write/table/pic/load-table.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/load-table.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 129.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 129.
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
-
- []
-
-[81]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 139.
-File: ./example/how-to/write/table/pic/menu-edit.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/menu-edit.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 139.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 139.
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 156.
-File: ./example/how-to/write/table/pic/edit-autosave.png Graphic file (type bmp
-)
-<./example/how-to/write/table/pic/edit-autosave.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 156.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 156.
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
-
- []
-
-[82]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 173.
-File: ./example/how-to/write/table/pic/table-set-size.png Graphic file (type bm
-p)
-<./example/how-to/write/table/pic/table-set-size.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 173.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 173.
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 182.
-File: ./example/how-to/write/table/pic/table-clear-table.png Graphic file (type
- bmp)
-<./example/how-to/write/table/pic/table-clear-table.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 182.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 182.
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-
- []
-
-[83]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 194.
-File: ./example/how-to/write/table/pic/options.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/options.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 194.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 194.
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 205.
-File: ./example/how-to/write/table/pic/options-table-center.png Graphic file (t
-ype bmp)
-<./example/how-to/write/table/pic/options-table-center.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 205.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 205.
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 230.
-File: ./example/how-to/write/table/pic/caption/above.png Graphic file (type bmp
-)
-<./example/how-to/write/table/pic/caption/above.png>
-File: ./example/how-to/write/table/pic/caption/below.png Graphic file (type bmp
-)
-<./example/how-to/write/table/pic/caption/below.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 230--230
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 230.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 230.
-[84]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 241.
-File: ./example/how-to/write/table/pic/style/style.png Graphic file (type bmp)
-<./example/how-to/write/table/pic/style/style.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 241.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 241.
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-LaTeX Warning: Reference `table:style:sample-1' on page 85 undefined on input l
-ine 245.
-
-
-LaTeX Warning: Reference `table:style:default-1' on page 85 undefined on input 
-line 245.
-
-
-LaTeX Warning: Reference `table:style:booktabs-1' on page 85 undefined on input
- line 245.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 263.
-File: ./example/how-to/write/table/pic/style/default-1.png Graphic file (type b
-mp)
-<./example/how-to/write/table/pic/style/default-1.png>
-File: ./example/how-to/write/table/pic/style/booktabs-1.png Graphic file (type 
-bmp)
-<./example/how-to/write/table/pic/style/booktabs-1.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 263--263
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 263.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 263.
-
-LaTeX Warning: Reference `table:style:sample-2' on page 85 undefined on input l
-ine 265.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 281.
-File: ./example/how-to/write/table/pic/style/default-2.png Graphic file (type b
-mp)
-<./example/how-to/write/table/pic/style/default-2.png>
-File: ./example/how-to/write/table/pic/style/booktabs-2.png Graphic file (type 
-bmp)
-<./example/how-to/write/table/pic/style/booktabs-2.png>
-
-Overfull \hbox (8.0pt too wide) in paragraph at lines 281--281
-[]$[]$    $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 281.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 281.
-[85]
-
-LaTeX Warning: Reference `table:how-to:write:figure:insert-figure-into-table' o
-n page 86 undefined on input line 303.
-
-
-LaTeX Warning: Reference `table:package:comment' on page 86 undefined on input 
-line 310.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 316.
-File: ./example/how-to/write/table/pic/table-comment.png Graphic file (type bmp
-)
-<./example/how-to/write/table/pic/table-comment.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 316.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 316.
-[86]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 326.
-
-Overfull \hbox (1.20982pt too wide) in paragraph at lines 365--365
-[]     \TU/lmtt/m/n/12 0.x:  \TU/TimesKaiuChiFont(0)/m/n/12 以 比 例 的 大 小 \TU/lmt
-t/m/n/12 ;  \TU/TimesKaiuChiFont(0)/m/n/12 個 人 推 薦 最 大 值 為 \TU/lmtt/m/n/12 0.9,
-  \TU/TimesKaiuChiFont(0)/m/n/12 因 需 保 留 小 量 左 右 的 空 白 \TU/lmtt/m/n/12 )[] 
- []
-
-[87] [88]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 401.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 401.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 401.
- [89]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 434.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 434.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 434.
- [90]
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
-
- []
-
-
-LaTeX Warning: Reference `table:how-to-write:table-example1' on page 91 undefin
-ed on input line 444.
-
-
-LaTeX Warning: Reference `table:how-to-write:table-example2' on page 91 undefin
-ed on input line 444.
-
-
-LaTeX Warning: Reference `table:how-to-write:table-example3' on page 91 undefin
-ed on input line 444.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 458.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 458.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 458.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 473.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 473.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 473.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 488.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 488.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
-[91]
-
-LaTeX Warning: Reference `table:how-to-write:table-example4' on page 92 undefin
-ed on input line 499.
-
-
-LaTeX Warning: Reference `table:how-to-write:table-example5' on page 92 undefin
-ed on input line 499.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 513.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 513.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 513.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 530.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 530.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 530.
-[92]
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 559.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 559.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 559.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 573.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 573.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 573.
-[93]
-
-LaTeX Warning: Reference `chapter:how-to:write:pseudocode' on page 94 undefined
- on input line 581.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 611.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 611.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 611.
-[94]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 645.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 645.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 645.
- [95]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 675.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 675.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 675.
- [96]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 710.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 710.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 710.
- [97]
-
-LaTeX Warning: Citation `web:latex:diagbox-doc' on page 98 undefined on input l
-ine 716.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 716--717
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 718.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 761.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 761.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 761.
-[98] [99]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 788.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 788.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 788.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 806.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 806.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 806.
- [100]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 836.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 836.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 836.
- [101]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 856.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 856.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 856.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 872.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 872.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 872.
- [102]) (./example/how-to/write/equation/equation.tex
-
-LaTeX Warning: Reference `chapter:how-to:write:table' on page 103 undefined on 
-input line 9.
-
-[103
-
-] [104]
-
-LaTeX Warning: Reference `eq:example:eq1' on page 105 undefined on input line 9
-7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-LaTeX Warning: Reference `eq:example:eq1' on page 105 undefined on input line 1
-02.
-
-[105]
-
-LaTeX Warning: Reference `fig:how-to:equation:hostmath' on page 106 undefined o
-n input line 112.
-
-
-LaTeX Warning: Citation `web:latex:equation:hostmath' on page 106 undefined on 
-input line 112.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 118.
-File: ./example/how-to/write/equation/pic/hostmath.png Graphic file (type bmp)
-<./example/how-to/write/equation/pic/hostmath.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 118.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 118.
-
-LaTeX Warning: Reference `fig:how-to:equation:hostmath' on page 106 undefined o
-n input line 129.
-
-[106]
-
-LaTeX Warning: Citation `web:latex:equation:codecogs' on page 107 undefined on 
-input line 133.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-
-LaTeX Warning: Reference `fig:how-to:equation:codecogs' on page 107 undefined o
-n input line 135.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 141.
-File: ./example/how-to/write/equation/pic/codecogs.png Graphic file (type bmp)
-<./example/how-to/write/equation/pic/codecogs.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 141.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 141.
-
-LaTeX Warning: Reference `chapter:how-to:write:figure' on page 107 undefined on
- input line 143.
-
-) [107] (./example/how-to/write/nomenclature/nomenclature.tex
-
-LaTeX Warning: Reference `chapter:how-to:write:table' on page 108 undefined on 
-input line 10.
-
-
-LaTeX Warning: Reference `chapter:how-to:write:equation' on page 108 undefined 
-on input line 11.
-
-
-LaTeX Warning: Citation `web:symbols:site1' on page 108 undefined on input line
- 11.
-
-
-LaTeX Warning: Citation `web:symbols:site2' on page 108 undefined on input line
- 11.
-
-
-LaTeX Warning: Citation `web:symbols:site3' on page 108 undefined on input line
- 11.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-[108]) [109] (./example/how-to/write/bib/bib.tex
-
-LaTeX Warning: Citation `web:latex:bib_manage' on page 110 undefined on input l
-ine 11.
-
-
-LaTeX Warning: Reference `fig:write:bib:1' on page 110 undefined on input line 
-15.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 20.
-File: ./example/how-to/write/bib/pic/1.png Graphic file (type bmp)
-<./example/how-to/write/bib/pic/1.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 20.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-File: ./example/how-to/write/bib/pic/2.png Graphic file (type bmp)
-<./example/how-to/write/bib/pic/2.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 25.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 25.
-
-LaTeX Warning: Reference `fig:write:bib:2' on page 110 undefined on input line 
-27.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-File: ./example/how-to/write/bib/pic/3.png Graphic file (type bmp)
-<./example/how-to/write/bib/pic/3.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 32.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 32.
-[110]
-
-LaTeX Warning: Reference `fig:write:bib:3' on page 111 undefined on input line 
-34.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
-File: ./example/how-to/write/bib/pic/4.png Graphic file (type bmp)
-<./example/how-to/write/bib/pic/4.png>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 39.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 39.
-
-LaTeX Warning: Reference `chapter:how-to:write:label' on page 111 undefined on 
-input line 41.
-
-[111]) (./example/how-to/write/pseudocode/pseudocode.tex
-
-LaTeX Warning: Reference `subsection:how-to:write:table:api' on page 112 undefi
-ned on input line 6.
-
-[112
-
-]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 19.
-
-
-LaTeX Font Warning: Font shape `TU/TimesKaiuEngFont(0)/m/sc' undefined
-(Font)              using `TU/TimesKaiuEngFont(0)/m/n' instead on input line 23
+LaTeX Warning: Citation `chen2020simple' on page 10 undefined on input line 107
 .
 
-[113]
 
-LaTeX Warning: Reference `algo:functionA' on page 114 undefined on input line 5
-0.
+LaTeX Warning: Citation `gao2021simcse' on page 10 undefined on input line 107.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 52.
-[114] [115]
-
-LaTeX Warning: Reference `algo:functionB' on page 116 undefined on input line 1
-28.
+LaTeX Warning: Citation `longpre2020effective' on page 10 undefined on input li
+ne 111.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+LaTeX Warning: Citation `kumar2020data' on page 10 undefined on input line 111.
 
- []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 130.
-) [116]) (./example/words-from-professor/words-from-professor.tex [117
+[10] [11]) (./context/background/background.tex [12
 
 ]
-[118] [119]
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
-
+Overfull \hbox (12.54144pt too wide) in paragraph at lines 37--38
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Meta-Learning: \TU/TimesKaiuEngFont(0)/m/n/12 
+Meta-learning approaches, such as Model-Agnostic Meta-Learning (MAML),
  []
 
-[120] [121]
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
-
+[13]
+Overfull \hbox (8.47488pt too wide) in paragraph at lines 71--72
+\TU/TimesKaiuEngFont(0)/m/n/12 that include multiple node types (documents, wor
+ds, authors, topics) and edge types (document-
  []
 
-[122]
-Underfull \hbox (badness 10000) in paragraph at lines 545--548
-
+[14] [15] [16]
+Overfull \hbox (4.85315pt too wide) in paragraph at lines 168--169
+[]\TU/TimesKaiuEngFont(0)/m/n/12 This formal framework provides the mathematica
+l foundation for understanding our GemGNN
  []
 
-[123]) (./example/references/references.tex)
+[17]) (./context/methodology/methodology.tex
+
+LaTeX Warning: Reference `fig:methodology:overview' on page 18 undefined on inp
+ut line 7.
+
+[18
+
+] [19] [20] [21]
+Overfull \hbox (7.1383pt too wide) in paragraph at lines 116--117
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Semantic-level Attention: \TU/TimesKaiuEngFont
+(0)/m/n/12 We aggregate information across different edge types using learned
+ []
+
+[22] [23] [24]) (./context/experiment/experimental-setup.tex
+
+LaTeX Warning: Citation `shu2018fakenewsnet' on page 25 undefined on input line
+ 11.
+
+[25
+
+]
+Overfull \hbox (6.01721pt too wide) in paragraph at lines 41--42
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Professional Verification: \TU/TimesKaiuEngFon
+t(0)/m/n/12 Both datasets provide labels verified by professional fact-checkers
+,
+ []
+
+[26] [27]
+Missing character: There is no ∈ in font [./template/fonts/times.ttf]/OT:script
+=latn;language=dflt;mapping=tex-text;!
+ [28] [29] [30] [31]) (./context/results/results.tex
+
+LaTeX Warning: Reference `tab:results:politifact' on page 32 undefined on input
+ line 11.
+
+[32
+
+]
+
+LaTeX Warning: Reference `tab:results:gossipcop' on page 33 undefined on input 
+line 47.
+
+[33]
+Overfull \hbox (0.367pt too wide) in paragraph at lines 91--92
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Graph-based Methods: \TU/TimesKaiuEngFont(0)/m
+/n/12 Less4FD and HeteroSGT represent current state-of-the-art in graph-
+ []
+
+
+LaTeX Warning: Reference `tab:ablation:components' on page 34 undefined on inpu
+t line 99.
+
+[34]
+
+LaTeX Warning: Reference `tab:ablation:tones' on page 35 undefined on input lin
+e 134.
+
+
+LaTeX Warning: Reference `fig:results:kshot_analysis' on page 35 undefined on i
+nput line 161.
+
+[35]
+Overfull \hbox (2.13635pt too wide) in paragraph at lines 185--186
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Multi-Scale Information Integration: \TU/Times
+KaiuEngFont(0)/m/n/12 The combination of content-level features (DeBERTa
+ []
+
+[36] [37] [38]) (./context/conclusion/conclusion.tex [39
+
+] [40]
+Overfull \hbox (1.47229pt too wide) in paragraph at lines 43--44
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Cross-Domain Generalization: \TU/TimesKaiuEngF
+ont(0)/m/n/12 Our framework demonstrates consistent performance across
+ []
+
+
+Overfull \hbox (13.02893pt too wide) in paragraph at lines 59--60
+[]\TU/TimesKaiuEngFont(0)/b/n/12 Static Graph Limitation: \TU/TimesKaiuEngFont(
+0)/m/n/12 Our current approach constructs static graphs based on pre-computed
+ []
+
+[41] [42]) (./context/references/references.tex)
 No file thesis.bbl.
-(./example/appendix/appendix.tex (./example/appendix/acceptable-dept.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-[124
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 26.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 26.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 42.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 42.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 42.
- [125
-
-]) (./example/appendix/submit-flow.tex
-
-LaTeX Warning: Citation `web:lib:submit-flow' on page 126 undefined on input li
-ne 5.
-
-
-LaTeX Warning: Citation `web:lib:submit-file' on page 126 undefined on input li
-ne 5.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 1>
-[126
-
-]
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 1>
- [127]
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 2>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 2>
-File: ./example/appendix/pdf/2012050004-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050004-a.pdf, page 2>
- [128]
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf>
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf>
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050006-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050006-a.pdf, page 1>
- [129]) (./example/appendix/thesis-spec.tex
-
-LaTeX Warning: Citation `web:ncku:thesis-need-to-know' on page 130 undefined on
- input line 5.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 1>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 1>
-[130
-
-]
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 1>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 1>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 1>
- [131]
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 2>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 2>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 2>
- [132]
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 3>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 3>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 3>
- [133]
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 4>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 4>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 4>
- [134]
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 5>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 5>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 5>
- [135]
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 6>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 6>
-File: ./example/appendix/pdf/thesis-spec-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/thesis-spec-a.pdf, page 6>
- [136])
-(./example/appendix/e-paper_upload.tex
-
-LaTeX Warning: Citation `web:lib:upload-things-check' on page 137 undefined on 
-input line 5.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 1>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 1>
-[137
-
-]
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 1>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 1>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 1>
- [138]
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 2>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 2>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 2>
- [139]
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 3>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 3>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 3>
- [140]
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 4>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 4>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 4>
- [141]
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 5>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 5>
-File: ./example/appendix/pdf/2012090001-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012090001-a.pdf, page 5>
- [142]) (./example/appendix/e-paper_upload_ppt.tex
-
-LaTeX Warning: Citation `web:lib:2016-submit-ppt' on page 143 undefined on inpu
-t line 5.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 1>
-[143
-
-]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 1>
- [144]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 2>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 2>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 2>
- [145]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 3>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 3>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 3>
- [146]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 4>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 4>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 4>
- [147]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 5>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 5>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 5>
- [148]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 6>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 6>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 6>
- [149]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 7>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 7>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 7>
- [150]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 8>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 8>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 8>
- [151]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 9>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 9>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 9>
- [152]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 10>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 10>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 10>
- [153]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 11>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 11>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 11>
- [154]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 12>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 12>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 12>
-
-[155]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 13>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 13>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 13>
- [156]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 14>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 14>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 14>
- [157]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 15>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 15>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 15>
- [158]
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 16>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 16>
-File: ./example/appendix/pdf/2012050003-short-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050003-short-a.pdf, page 16>
- [159]) (./example/appendix/oral-notice.tex
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 1>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 1>
- [160
-
-]
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 1>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 1>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 1>
-
-[161]
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 2>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 2>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 2>
- [162]
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 3>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 3>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 3>
- [163]
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 4>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 4>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 4>
- [164]
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 5>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 5>
-File: ./example/appendix/pdf/oral-1040616-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/oral-1040616-a.pdf, page 5>
- [165]) (./example/appendix/faq.tex
-
-LaTeX Warning: Citation `web:lib:ETDS-QA' on page 166 undefined on input line 5
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 1>
-[166
-
-]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 1>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 1>
- [167]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 2>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 2>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 2>
- [168]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 3>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 3>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 3>
- [169]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 4>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 4>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 4>
- [170]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 5>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 5>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 5>
- [171]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 6>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 6>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 6>
- [172]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 7>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 7>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 7>
- [173]
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 8>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 8>
-File: ./example/appendix/pdf/2012050009-a.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/2012050009-a.pdf, page 8>
- [174])
-(./example/appendix/unicode-symbols.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 1>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 1>
-[175
-
-]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 1>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 1>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 1>
- [176]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 2>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 2>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 2>
- [177]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 3>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 3>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 3>
- [178]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 4>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 4>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 4>
- [179]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 5>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 5>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 5>
- [180]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 6>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 6>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 6>
- [181]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 7>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 7>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 7>
- [182]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 8>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 8>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 8>
- [183]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 9>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 9>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 9>
- [184]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 10>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 10>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 10>
- [185]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 11>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 11>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 11>
- [186]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 12>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 12>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 12>
-
-[187]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 13>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 13>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 13>
- [188]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 14>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 14>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 14>
- [189]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 15>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 15>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 15>
- [190]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 16>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 16>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 16>
- [191]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 17>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 17>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 17>
- [192]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 18>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 18>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 18>
- [193]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 19>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 19>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 19>
- [194]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 20>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 20>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 20>
- [195]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 21>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 21>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 21>
- [196]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 22>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 22>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 22>
- [197]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 23>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 23>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 23>
- [198]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 24>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 24>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 24>
-
-[199]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 25>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 25>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 25>
- [200]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 26>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 26>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 26>
- [201]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 27>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 27>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 27>
- [202]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 28>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 28>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 28>
- [203]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 29>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 29>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 29>
- [204]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 30>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 30>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 30>
- [205]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 31>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 31>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 31>
- [206]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 32>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 32>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 32>
- [207]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 33>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 33>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 33>
- [208]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 34>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 34>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 34>
- [209]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 35>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 35>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 35>
- [210]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 36>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 36>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 36>
-
-[211]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 37>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 37>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 37>
- [212]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 38>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 38>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 38>
- [213]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 39>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 39>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 39>
- [214]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 40>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 40>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 40>
- [215]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 41>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 41>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 41>
- [216]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 42>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 42>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 42>
- [217]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 43>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 43>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 43>
- [218]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 44>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 44>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 44>
- [219]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 45>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 45>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 45>
- [220]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 46>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 46>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 46>
- [221]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 47>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 47>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 47>
- [222]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 48>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 48>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 48>
-
-[223]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 49>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 49>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 49>
- [224]
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 50>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 50>
-File: ./example/appendix/pdf/xunicode-symbols.pdf Graphic file (type pdf)
-<use ./example/appendix/pdf/xunicode-symbols.pdf, page 50>
- [225])) (./example/content-test/content-test.tex
-(./example/content-test/half-full-char.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Overfull \hbox (10.12173pt too wide) in paragraph at lines 56--56
-[]    \TU/TimesKaiuChiFont(0)/m/n/12 全 形      半 形         \TU/lmtt/m/n/12 |    
-     \TU/TimesKaiuChiFont(0)/m/n/12 全 形      半 形         \TU/lmtt/m/n/12 |     
-    \TU/TimesKaiuChiFont(0)/m/n/12 全 形      半 形 [] 
- []
-
-[226
-
-
-]) (./example/content-test/eng-content.tex [227]
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-[228]
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-[229]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-) (./example/content-test/chi-content.tex [230]
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-[231]
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-[232]
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-) (./example/content-test/eng-chi-mix-content.tex [233] [234]
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-[235] [236] [237]) (./example/content-test/table.tex [238]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 26.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 26.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 40.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 40.
- [239]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 58.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 58.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 58.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 72.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 72.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 72.
 )
-(./example/content-test/figure.tex [240]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 11.
-File: ./example/abstract/pic/extended-abstract-2.jpg Graphic file (type bmp)
-<./example/abstract/pic/extended-abstract-2.jpg>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 11.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 11.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 17.
-File: ./example/abstract/pic/extended-abstract-2.jpg Graphic file (type bmp)
-<./example/abstract/pic/extended-abstract-2.jpg>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 17.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 17.
- [241]
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
 
- []
+Package caption Warning: Unused \captionsetup[figure] on input line 172.
+See the caption package documentation for explanation.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 32.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 32.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 44.
-File: ./example/how-to/write/figure/pic/CC-BY-NC.png Graphic file (type bmp)
-<./example/how-to/write/figure/pic/CC-BY-NC.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-
- []
-
-File: ./example/how-to/write/figure/pic/CC-BY-NC-ND.png Graphic file (type bmp)
-
-<./example/how-to/write/figure/pic/CC-BY-NC-ND.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-
- []
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 44.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 44.
-) (./example/content-test/equation.tex [242])
-(./example/content-test/chapter-section.tex [243] [244] [245])
-(./example/content-test/ref-cite.tex [246
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 20.
-File: ./example/abstract/pic/extended-abstract-2.jpg Graphic file (type bmp)
-<./example/abstract/pic/extended-abstract-2.jpg>
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 20.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 40.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 40.
- [247]
-
-LaTeX Warning: Reference `testpage:ref-cite:chapter' on page 248 undefined on i
-nput line 50.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:chapter' on page 248 undefined on i
-nput line 51.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:section' on page 248 undefined on i
-nput line 53.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:section' on page 248 undefined on i
-nput line 54.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:subsection' on page 248 undefined o
-n input line 56.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:subsection' on page 248 undefined o
-n input line 57.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:subsubsection' on page 248 undefine
-d on input line 59.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:subsubsection' on page 248 undefine
-d on input line 60.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:figure' on page 248 undefined on in
-put line 62.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:figure' on page 248 undefined on in
-put line 63.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:table' on page 248 undefined on inp
-ut line 65.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:table' on page 248 undefined on inp
-ut line 66.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:eq' on page 248 undefined on input 
-line 68.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:eq' on page 248 undefined on input 
-line 69.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
-
- []
-
-
-LaTeX Warning: Reference `testpage:ref-cite:eq' on page 248 undefined on input 
-line 71.
-
-
-LaTeX Warning: Reference `testpage:ref-cite:eq' on page 248 undefined on input 
-line 72.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
-
- []
-
-[248
-
-]
-
-LaTeX Warning: Citation `testpage:bib:paper:mapreduce' on page 249 undefined on
- input line 78.
-
-
-LaTeX Warning: Citation `testpage:bib:paper:gfs' on page 249 undefined on input
- line 80.
-
-
-LaTeX Warning: Citation `testpage:bib:paper:gfs2' on page 249 undefined on inpu
-t line 81.
-
-
-LaTeX Warning: Citation `testpage:bib:paper:mapreduce' on page 249 undefined on
- input line 84.
-
-
-LaTeX Warning: Citation `testpage:bib:paper:gfs' on page 249 undefined on input
- line 86.
-
-
-LaTeX Warning: Citation `testpage:bib:paper:gfs2' on page 249 undefined on inpu
-t line 87.
-
-
-LaTeX Warning: Citation `testpage:bib:book:hadoop' on page 249 undefined on inp
-ut line 91.
-
-
-LaTeX Warning: Citation `testpage:bib:book:justice' on page 249 undefined on in
-put line 92.
-
-
-LaTeX Warning: Citation `testpage:bib:book:whatMoneyCantBuy' on page 249 undefi
-ned on input line 93.
-
-
-LaTeX Warning: Citation `testpage:bib:book:hadoop' on page 249 undefined on inp
-ut line 96.
-
-
-LaTeX Warning: Citation `testpage:bib:book:justice' on page 249 undefined on in
-put line 97.
-
-
-LaTeX Warning: Citation `testpage:bib:book:whatMoneyCantBuy' on page 249 undefi
-ned on input line 98.
-
-[249]) (./example/content-test/theorem.tex
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-
- []
-
-[250
-
-] [251] [252] [253])))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
- (./thesis.aux)
+(./thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 
@@ -4763,11 +1751,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  64DEBB81A09FD2987C71C25682D741CF;8850.
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+(rerunfilecheck)             Before: 64DEBB81A09FD2987C71C25682D741CF;8850
+(rerunfilecheck)             After:  8D2BE1DB256DB446A71D63F995150527;10405.
 
 LaTeX Warning: There were undefined references.
 
@@ -4776,12 +1761,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 33083 strings out of 479819
- 705443 string characters out of 5895846
- 1007902 words of memory out of 5000000
- 49254 multiletter control sequences out of 15000+600000
- 537655 words of font info for 82 fonts, out of 8000000 for 9000
+ 32073 strings out of 479819
+ 657010 string characters out of 5895846
+ 995366 words of memory out of 5000000
+ 48443 multiletter control sequences out of 15000+600000
+ 537583 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 74i,20n,88p,854b,1290s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,18n,86p,854b,1128s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (267 pages).
+Output written on thesis.pdf (56 pages).

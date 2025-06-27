@@ -1,41 +1,11 @@
 \addvspace {10 pt}
 \addvspace {10 pt}
 \addvspace {10 pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces 系所名字 Part 1\relax }}{39}{table.caption.47}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces 系所名字 Part 2\relax }}{40}{table.caption.48}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces 系所名字 Part 3\relax }}{41}{table.caption.49}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces 系所名字 Part 4\relax }}{42}{table.caption.50}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces 系所名字 Part 5\relax }}{43}{table.caption.51}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces 系所名字 Part 6\relax }}{44}{table.caption.52}%
-\addvspace {10 pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces 標題在上方\relax }}{89}{table.caption.96}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces 標題在下面\relax }}{90}{table.caption.97}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces 表格寬度超過頁面\relax }}{91}{table.caption.98}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces 表格寬度設定scale=1.0\relax }}{91}{table.caption.99}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces 表格寬度設定scale=0.9\relax }}{91}{table.caption.100}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces 內容較少的表格\relax }}{92}{table.caption.101}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces 內容較少的表格, 但設定了scale=0.9\relax }}{92}{table.caption.102}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces opacity使用預設\relax }}{93}{table.caption.103}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces opacity使用0.4\relax }}{93}{table.caption.104}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Hello World in C\relax }}{94}{table.caption.105}%
-\addvspace {10 pt}
-\addvspace {10 pt}
-\contentsline {table}{\numberline {1.1}{\ignorespaces 應該可使用的系所\relax }}{125}{table.caption.125}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces 應該不可使用的系所\relax }}{125}{table.caption.126}%
 \addvspace {10 pt}
 \addvspace {10 pt}
 \addvspace {10 pt}
-\addvspace {10 pt}
-\addvspace {10 pt}
-\addvspace {10 pt}
-\addvspace {10 pt}
-\addvspace {10 pt}
-\contentsline {table}{\numberline {9.1}{\ignorespaces opacity使用預設\relax }}{239}{table.caption.135}%
-\contentsline {table}{\numberline {9.2}{\ignorespaces 測試opacity=0.4\relax }}{239}{table.caption.136}%
-\contentsline {table}{\numberline {9.3}{\ignorespaces 不進行寬度設定, 應超出頁面\relax }}{240}{table.caption.137}%
-\contentsline {table}{\numberline {9.4}{\ignorespaces 表格寬度設定scale=0.9\relax }}{240}{table.caption.138}%
-\addvspace {10 pt}
-\addvspace {10 pt}
-\contentsline {table}{\numberline {11.1}{\ignorespaces Ref用table\relax }}{247}{table.caption.146}%
-\addvspace {10 pt}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Performance comparison on PolitiFact dataset. Best results in bold, second-best underlined.\relax }}{32}{table.caption.18}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Performance comparison on GossipCop dataset. Best results in bold, second-best underlined.\relax }}{33}{table.caption.19}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Ablation study on PolitiFact dataset (8-shot setting). Each row removes one component.\relax }}{34}{table.caption.20}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Impact of different interaction tones on performance (PolitiFact, 8-shot).\relax }}{35}{table.caption.21}%
 \addvspace {10 pt}

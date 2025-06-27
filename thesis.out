@@ -1,113 +1,103 @@
-\BOOKMARK [0][-]{section*.4}{摘要}{}% 1
-\BOOKMARK [0][-]{section*.5}{Abstract}{}% 2
-\BOOKMARK [0][-]{section*.6}{英文延伸摘要}{}% 3
-\BOOKMARK [0][-]{section*.9}{誌謝}{}% 4
-\BOOKMARK [0][-]{section*.10}{Acknowledgements}{}% 5
-\BOOKMARK [0][-]{section*.11}{Table\040of\040Contents}{}% 6
-\BOOKMARK [0][-]{section*.12}{List\040of\040Tables}{}% 7
-\BOOKMARK [0][-]{section*.13}{List\040of\040Figures}{}% 8
-\BOOKMARK [0][-]{section*.14}{Nomenclature}{}% 9
-\BOOKMARK [0][-]{chapter.1}{Chapter\0401.\040\040\040Introduction}{}% 10
-\BOOKMARK [0][-]{chapter.2}{Chapter\0402.\040\040\040Objective}{}% 11
-\BOOKMARK [1][-]{section.2.1}{2.1.   起因}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.2}{2.2.   目標}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{2.3.   缺點}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.4}{2.4.   總結}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{Chapter 3.   本模版使用教學}{}% 16
-\BOOKMARK [1][-]{section.3.1}{3.1.   基本介紹 Introduction}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1.   本模版的檔案}{section.3.1}% 18
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2.   編寫用Editor}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3.   產生用的工具}{section.3.1}% 20
-\BOOKMARK [1][-]{section.3.2}{3.2.   檔案結構 Source Tree}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{3.3.   產生論文 Generate Thesis}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1.   MiKTeX安裝}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2.   更新MiKTeX}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3.   Texmaker安裝}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4.   產生論文和封面}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.5}{3.3.5.   產生PDF的流程}{section.3.3}% 27
-\BOOKMARK [1][-]{section.3.4}{3.4.   論文基本資料設定 Thesis's configuration}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Chapter 4.   LaTex編寫教學}{}% 29
-\BOOKMARK [1][-]{section.4.1}{4.1.   基本介紹 Introduction}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{4.2.   基本語法 Basic syntax}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1.   字體變化}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2.   清單 List Structures}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3.   標記 Label}{section.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4.   引用 Reference}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5.   註解 Comment}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6.   引用別的LaTex檔}{section.4.2}% 37
-\BOOKMARK [1][-]{section.4.3}{4.3.   章節 Chapter/Section}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.4}{4.4.   圖片 Figure}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1.   圖片小知識}{section.4.4}% 40
-\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2.   轉換格式}{section.4.4}% 41
-\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3.   使用介紹}{section.4.4}% 42
-\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4.   單張}{section.4.4}% 43
-\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5.   多張}{section.4.4}% 44
-\BOOKMARK [1][-]{section.4.5}{4.5.   表格 Table}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1.   產生LaTex}{section.4.5}% 46
-\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2.   功能}{section.4.5}% 47
-\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3.\040\040\040File}{section.4.5}% 48
-\BOOKMARK [2][-]{subsection.4.5.4}{4.5.4.\040\040\040Edit}{section.4.5}% 49
-\BOOKMARK [2][-]{subsection.4.5.5}{4.5.5.\040\040\040Table}{section.4.5}% 50
-\BOOKMARK [2][-]{subsection.4.5.6}{4.5.6.\040\040\040Extra\040options}{section.4.5}% 51
-\BOOKMARK [2][-]{subsection.4.5.7}{4.5.7.\040\040\040Style}{section.4.5}% 52
-\BOOKMARK [2][-]{subsection.4.5.8}{4.5.8.   其他}{section.4.5}% 53
-\BOOKMARK [2][-]{subsection.4.5.9}{4.5.9.   模版提供的功能}{section.4.5}% 54
-\BOOKMARK [2][-]{subsection.4.5.10}{4.5.10.   表格闊度和文字位置}{section.4.5}% 55
-\BOOKMARK [2][-]{subsection.4.5.11}{4.5.11.   使用斜線}{section.4.5}% 56
-\BOOKMARK [1][-]{section.4.6}{4.6.   公式 Equation}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1.   介紹}{section.4.6}% 58
-\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2.   使用方式}{section.4.6}% 59
-\BOOKMARK [2][-]{subsection.4.6.3}{4.6.3.   工具}{section.4.6}% 60
-\BOOKMARK [2][-]{subsection.4.6.4}{4.6.4.   轉成圖片}{section.4.6}% 61
-\BOOKMARK [1][-]{section.4.7}{4.7.   術語/符號 Nomenclature}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.7.1}{4.7.1.   使用方式}{section.4.7}% 63
-\BOOKMARK [1][-]{section.4.8}{4.8.   文獻引用 Bibliography/Reference}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.8.1}{4.8.1.   介紹}{section.4.8}% 65
-\BOOKMARK [2][-]{subsection.4.8.2}{4.8.2.   使用方式}{section.4.8}% 66
-\BOOKMARK [1][-]{section.4.9}{4.9.   虛擬程式碼\(Pseudocode\)}{chapter.4}% 67
-\BOOKMARK [0][-]{chapter.5}{Chapter 5.   老師們的話 Words from Professors}{}% 68
-\BOOKMARK [1][-]{section.5.1}{5.1.   想法}{chapter.5}% 69
-\BOOKMARK [1][-]{section.5.2}{5.2.   投影片/presentation}{chapter.5}% 70
-\BOOKMARK [1][-]{section.5.3}{5.3.   投論文的目標}{chapter.5}% 71
-\BOOKMARK [1][-]{section.5.4}{5.4.   實驗的比較對象}{chapter.5}% 72
-\BOOKMARK [1][-]{section.5.5}{5.5.\040\040\040Related\040work}{chapter.5}% 73
-\BOOKMARK [1][-]{section.5.6}{5.6.\040\040\040References}{chapter.5}% 74
-\BOOKMARK [1][-]{section.5.7}{5.7.   圖上的文字 / 表格}{chapter.5}% 75
-\BOOKMARK [1][-]{section.5.8}{5.8.   寫作技術}{chapter.5}% 76
-\BOOKMARK [1][-]{section.5.9}{5.9.   內容}{chapter.5}% 77
-\BOOKMARK [1][-]{section.5.10}{5.10.   公式}{chapter.5}% 78
-\BOOKMARK [0][-]{appendixchapter.1}{Appendix A.   可使用這模版的系所}{}% 79
-\BOOKMARK [1][-]{appendixsection.1}{A.1.   應該可使用}{appendixchapter.1}% 80
-\BOOKMARK [1][-]{appendixsection.2}{A.2.   應該不可使用}{appendixchapter.1}% 81
-\BOOKMARK [0][-]{appendixchapter.2}{Appendix B.   繳交流程說明}{}% 82
-\BOOKMARK [0][-]{appendixchapter.3}{Appendix C.   各系所博碩士撰寫論文須知}{}% 83
-\BOOKMARK [0][-]{appendixchapter.4}{Appendix D.   電子論文上傳前檢查事項}{}% 84
-\BOOKMARK [0][-]{appendixchapter.5}{Appendix E.   論文提交說明}{}% 85
-\BOOKMARK [0][-]{appendixchapter.6}{Appendix F.   口試注意事項}{}% 86
-\BOOKMARK [0][-]{appendixchapter.7}{Appendix G.   常見問題Q&A}{}% 87
-\BOOKMARK [0][-]{appendixchapter.8}{Appendix H.   LaTex Symbol寫法}{}% 88
-\BOOKMARK [0][-]{appendixchapter.9}{Appendix I.   測試頁 Testing Pages}{}% 89
-\BOOKMARK [1][-]{appendixsection.1}{I.1.   半形字元與全形字元的比較 \(ASCII字元\)}{appendixchapter.9}% 90
-\BOOKMARK [1][-]{appendixsection.2}{I.2.   英文內容 \(只用段落來分段\)}{appendixchapter.9}% 91
-\BOOKMARK [1][-]{appendixsection.3}{I.3.   英文內容 \(只用強制斷行\)}{appendixchapter.9}% 92
-\BOOKMARK [1][-]{appendixsection.4}{I.4.   英文內容 \(段落 + 強制斷行\)}{appendixchapter.9}% 93
-\BOOKMARK [1][-]{appendixsection.5}{I.5.   中文內容 \(只用段落來分段\)}{appendixchapter.9}% 94
-\BOOKMARK [1][-]{appendixsection.6}{I.6.   中文內容 \(只用強制斷行\)}{appendixchapter.9}% 95
-\BOOKMARK [1][-]{appendixsection.7}{I.7.   中文內容 \(段落 + 強制斷行\)}{appendixchapter.9}% 96
-\BOOKMARK [1][-]{appendixsection.8}{I.8.   混合的中英文內容 \(只用段落來分段\)}{appendixchapter.9}% 97
-\BOOKMARK [1][-]{appendixsection.9}{I.9.   Table使用透明度}{appendixchapter.9}% 98
-\BOOKMARK [1][-]{appendixsection.10}{I.10.   Table測試寬度}{appendixchapter.9}% 99
-\BOOKMARK [1][-]{appendixsection.11}{I.11.   Figure使用透明度}{appendixchapter.9}% 100
-\BOOKMARK [1][-]{appendixsection.12}{I.12.\040\040\040Equation}{appendixchapter.9}% 101
-\BOOKMARK [0][-]{appendixchapter.10}{Appendix J.   測試Chapter/Section \(中文內容\)}{}% 102
-\BOOKMARK [1][-]{appendixsection.1}{J.1.\040\040\040Section}{appendixchapter.10}% 103
-\BOOKMARK [2][-]{appendixsubsection.1}{J.1.1.\040\040\040SubSection}{appendixsection.1}% 104
-\BOOKMARK [1][-]{appendixsection.2}{J.2.\040\040\040Section}{appendixchapter.10}% 105
-\BOOKMARK [2][-]{appendixsubsection.1}{J.2.1.\040\040\040SubSection}{appendixsection.2}% 106
-\BOOKMARK [0][-]{appendixchapter.11}{Appendix K.   測試Reference/Cite}{}% 107
-\BOOKMARK [1][-]{appendixsection.1}{K.1.\040\040\040Section}{appendixchapter.11}% 108
-\BOOKMARK [2][-]{appendixsubsection.1}{K.1.1.\040\040\040SubSection}{appendixsection.1}% 109
-\BOOKMARK [0][-]{appendixchapter.12}{Appendix L.   測試 RefXXX}{}% 110
-\BOOKMARK [0][-]{appendixchapter.13}{Appendix M.   測試Theorem}{}% 111
-\BOOKMARK [1][-]{appendixsection.1}{M.1.\040\040\040Test\040counter\040following\040section}{appendixchapter.13}% 112
-\BOOKMARK [1][-]{appendixsection.2}{M.2.\040\040\040Test\040counters\040of\040each\040theorems}{appendixchapter.13}% 113
+\BOOKMARK [0][-]{section*.4}{Abstract}{}% 1
+\BOOKMARK [0][-]{section*.5}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{section*.6}{Table\040of\040Contents}{}% 3
+\BOOKMARK [0][-]{section*.7}{List\040of\040Tables}{}% 4
+\BOOKMARK [0][-]{section*.8}{List\040of\040Figures}{}% 5
+\BOOKMARK [0][-]{section*.9}{Nomenclature}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Chapter\0401.\040\040\040Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{1.1.\040\040\040Research\040Background\040and\040Motivation}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{1.2.\040\040\040Problem\040Statement\040and\040Challenges}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{1.3.\040\040\040Research\040Contributions}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{1.4.\040\040\040Thesis\040Organization}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Chapter\0402.\040\040\040Related\040Work}{}% 12
+\BOOKMARK [1][-]{section.2.1}{2.1.\040\040\040Traditional\040Fake\040News\040Detection\040Methods}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1.\040\040\040Feature\040Engineering\040Approaches}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2.\040\040\040Sequential\040Models}{section.2.1}% 15
+\BOOKMARK [1][-]{section.2.2}{2.2.\040\040\040Deep\040Learning\040Approaches}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1.\040\040\040Transformer-based\040Models}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2.\040\040\040Large\040Language\040Models\040for\040Fake\040News\040Detection}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{2.3.\040\040\040Graph-based\040Fake\040News\040Detection}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1.\040\040\040Document-level\040Graph\040Classification}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2.\040\040\040User\040Propagation-based\040Methods}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3.\040\040\040Heterogeneous\040Graph\040Neural\040Networks}{section.2.3}% 22
+\BOOKMARK [1][-]{section.2.4}{2.4.\040\040\040Few-Shot\040Learning\040in\040NLP}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1.\040\040\040Meta-Learning\040Approaches}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2.\040\040\040Contrastive\040Learning\040Methods}{section.2.4}% 25
+\BOOKMARK [1][-]{section.2.5}{2.5.\040\040\040Limitations\040of\040Existing\040Methods}{chapter.2}% 26
+\BOOKMARK [0][-]{chapter.3}{Chapter\0403.\040\040\040Background\040and\040Preliminaries}{}% 27
+\BOOKMARK [1][-]{section.3.1}{3.1.\040\040\040Few-Shot\040Learning\040Fundamentals}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1.\040\040\040Problem\040Formulation}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2.\040\040\040Challenges\040in\040Few-Shot\040Learning}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3.\040\040\040Few-Shot\040Learning\040Strategies}{section.3.1}% 31
+\BOOKMARK [1][-]{section.3.2}{3.2.\040\040\040Graph\040Neural\040Networks\040for\040Text\040Classification}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1.\040\040\040Message\040Passing\040Framework}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2.\040\040\040Graph\040Construction\040for\040Text}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3.\040\040\040Heterogeneous\040Graph\040Attention\040Networks}{section.3.2}% 35
+\BOOKMARK [1][-]{section.3.3}{3.3.\040\040\040Problem\040Formulation\040and\040Notation}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1.\040\040\040Fake\040News\040Detection\040as\040Node\040Classification}{section.3.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2.\040\040\040Few-Shot\040Learning\040Configuration}{section.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3.\040\040\040Learning\040Objective}{section.3.3}% 39
+\BOOKMARK [0][-]{chapter.4}{Chapter\0404.\040\040\040Methodology:\040GemGNN\040Framework}{}% 40
+\BOOKMARK [1][-]{section.4.1}{4.1.\040\040\040Framework\040Overview}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{4.2.\040\040\040Generative\040User\040Interaction\040Simulation}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1.\040\040\040LLM-based\040Interaction\040Generation}{section.4.2}% 43
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2.\040\040\040Multi-tone\040Interaction\040Design}{section.4.2}% 44
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3.\040\040\040Interaction-News\040Edge\040Construction}{section.4.2}% 45
+\BOOKMARK [1][-]{section.4.3}{4.3.\040\040\040Test-Isolated\040KNN\040Graph\040Construction}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1.\040\040\040Test\040Isolation\040Strategy\040and\040Motivation}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2.\040\040\040Mutual\040KNN\040for\040Training\040Nodes}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3.\040\040\040Ensuring\040Test-Train\040Connectivity}{section.4.3}% 49
+\BOOKMARK [1][-]{section.4.4}{4.4.\040\040\040Multi-View\040Graph\040Construction}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1.\040\040\040Embedding\040Dimension\040Splitting\040Strategy}{section.4.4}% 51
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2.\040\040\040View-specific\040Edge\040Construction}{section.4.4}% 52
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3.\040\040\040Multi-Graph\040Training\040Strategy}{section.4.4}% 53
+\BOOKMARK [1][-]{section.4.5}{4.5.\040\040\040Heterogeneous\040Graph\040Architecture}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1.\040\040\040Node\040Types\040and\040Features}{section.4.5}% 55
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2.\040\040\040Edge\040Types\040and\040Relations}{section.4.5}% 56
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3.\040\040\040HAN-based\040Message\040Passing\040and\040Classification}{section.4.5}% 57
+\BOOKMARK [1][-]{section.4.6}{4.6.\040\040\040Loss\040Function\040Design\040and\040Training\040Strategy}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1.\040\040\040Enhanced\040Loss\040Functions\040for\040Few-Shot\040Learning}{section.4.6}% 59
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2.\040\040\040Transductive\040Learning\040Framework}{section.4.6}% 60
+\BOOKMARK [0][-]{chapter.5}{Chapter\0405.\040\040\040Experimental\040Setup}{}% 61
+\BOOKMARK [1][-]{section.5.1}{5.1.\040\040\040Datasets\040and\040Preprocessing}{chapter.5}% 62
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1.\040\040\040FakeNewsNet\040Datasets}{section.5.1}% 63
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2.\040\040\040Data\040Statistics\040and\040Characteristics}{section.5.1}% 64
+\BOOKMARK [2][-]{subsection.5.1.3}{5.1.3.\040\040\040Text\040Embedding\040Generation}{section.5.1}% 65
+\BOOKMARK [1][-]{section.5.2}{5.2.\040\040\040Baseline\040Methods}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1.\040\040\040Traditional\040Methods}{section.5.2}% 67
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2.\040\040\040Language\040Models}{section.5.2}% 68
+\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3.\040\040\040Large\040Language\040Models}{section.5.2}% 69
+\BOOKMARK [2][-]{subsection.5.2.4}{5.2.4.\040\040\040Graph-based\040Methods}{section.5.2}% 70
+\BOOKMARK [1][-]{section.5.3}{5.3.\040\040\040Evaluation\040Methodology}{chapter.5}% 71
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1.\040\040\040Few-Shot\040Evaluation\040Protocol}{section.5.3}% 72
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2.\040\040\040Performance\040Metrics}{section.5.3}% 73
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3.\040\040\040Statistical\040Significance\040Testing}{section.5.3}% 74
+\BOOKMARK [1][-]{section.5.4}{5.4.\040\040\040Implementation\040Details}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1.\040\040\040Hyperparameter\040Settings}{section.5.4}% 76
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2.\040\040\040Model\040Architecture\040Configuration}{section.5.4}% 77
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3.\040\040\040Training\040Configuration\040and\040Hardware\040Setup}{section.5.4}% 78
+\BOOKMARK [0][-]{chapter.6}{Chapter\0406.\040\040\040Results\040and\040Analysis}{}% 79
+\BOOKMARK [1][-]{section.6.1}{6.1.\040\040\040Main\040Results}{chapter.6}% 80
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1.\040\040\040Performance\040on\040PolitiFact\040Dataset}{section.6.1}% 81
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2.\040\040\040Performance\040on\040GossipCop\040Dataset}{section.6.1}% 82
+\BOOKMARK [2][-]{subsection.6.1.3}{6.1.3.\040\040\040Comparison\040with\040Baseline\040Methods}{section.6.1}% 83
+\BOOKMARK [1][-]{section.6.2}{6.2.\040\040\040Ablation\040Studies}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1.\040\040\040Component\040Analysis}{section.6.2}% 85
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2.\040\040\040Impact\040of\040Generative\040User\040Interactions}{section.6.2}% 86
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3.\040\040\040Different\040K-shot\040Settings\040Analysis}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4.\040\040\040Effect\040of\040Different\040Interaction\040Tones}{section.6.2}% 88
+\BOOKMARK [1][-]{section.6.3}{6.3.\040\040\040Analysis\040and\040Discussion}{chapter.6}% 89
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1.\040\040\040Why\040GemGNN\040Works\040in\040Few-Shot\040Scenarios}{section.6.3}% 90
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2.\040\040\040Graph\040Construction\040Strategy\040Analysis}{section.6.3}% 91
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3.\040\040\040Model\040Architecture\040Comparison}{section.6.3}% 92
+\BOOKMARK [2][-]{subsection.6.3.4}{6.3.4.\040\040\040Computational\040Efficiency\040Analysis}{section.6.3}% 93
+\BOOKMARK [1][-]{section.6.4}{6.4.\040\040\040Error\040Analysis\040and\040Limitations}{chapter.6}% 94
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1.\040\040\040Failure\040Cases\040and\040Edge\040Cases}{section.6.4}% 95
+\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2.\040\040\040Dependency\040on\040Embedding\040Quality}{section.6.4}% 96
+\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3.\040\040\040Scalability\040Considerations}{section.6.4}% 97
+\BOOKMARK [0][-]{chapter.7}{Chapter\0407.\040\040\040Conclusion\040and\040Future\040Work}{}% 98
+\BOOKMARK [1][-]{section.7.1}{7.1.\040\040\040Summary\040of\040Contributions}{chapter.7}% 99
+\BOOKMARK [1][-]{section.7.2}{7.2.\040\040\040Key\040Findings\040and\040Insights}{chapter.7}% 100
+\BOOKMARK [1][-]{section.7.3}{7.3.\040\040\040Implications\040for\040Fake\040News\040Detection}{chapter.7}% 101
+\BOOKMARK [1][-]{section.7.4}{7.4.\040\040\040Limitations\040and\040Challenges}{chapter.7}% 102
+\BOOKMARK [1][-]{section.7.5}{7.5.\040\040\040Future\040Research\040Directions}{chapter.7}% 103
