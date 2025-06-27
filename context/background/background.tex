@@ -1,0 +1,172 @@
+% ------------------------------------------------
+\StartChapter{Background and Preliminaries}{chapter:background}
+% ------------------------------------------------
+
+This chapter provides the theoretical foundation necessary for understanding our GemGNN framework. We introduce fundamental concepts in few-shot learning, graph neural networks for text classification, and establish the formal problem formulation with mathematical notation used throughout this thesis.
+
+\section{Few-Shot Learning Fundamentals}
+
+Few-shot learning represents a paradigm shift from traditional machine learning approaches that require extensive labeled datasets. In few-shot scenarios, models must achieve strong performance with minimal supervision, making them particularly relevant for real-world applications where labeling is expensive or impractical.
+
+\subsection{Problem Formulation}
+
+\textbf{Formal Definition:} Few-shot learning is a machine learning framework where an AI model learns to make accurate predictions by training on a very small number of labeled examples per class. Formally, given a support set $\mathcal{S} = \{(x_i, y_i)\}_{i=1}^{K \times N}$ containing $K$ labeled examples for each of $N$ classes, the objective is to learn a classifier $f: \mathcal{X} \rightarrow \mathcal{Y}$ that can accurately predict labels for a query set $\mathcal{Q} = \{x_j\}_{j=1}^{M}$.
+
+\textbf{N-way K-shot Classification:} The standard formulation for few-shot learning is N-way K-shot classification, where $N$ represents the number of classes and $K$ denotes the number of labeled examples per class. In our fake news detection task, we focus on 2-way K-shot learning with $K \in \{3, 4, 8, 16\}$, where the two classes represent real and fake news respectively.
+
+\textbf{Support and Query Sets:} The support set $\mathcal{S}$ contains the limited labeled examples available for training, while the query set $\mathcal{Q}$ contains unlabeled instances that must be classified. In traditional few-shot learning, these sets are disjoint, but our transductive approach allows overlap between support and query sets during training while maintaining separation during evaluation.
+
+\subsection{Challenges in Few-Shot Learning}
+
+Few-shot learning presents several fundamental challenges that differentiate it from conventional machine learning:
+
+\textbf{Limited Training Data:} Traditional deep learning requires thousands of labeled examples per class to achieve good performance. In few-shot scenarios with only 3-16 examples per class, models are highly prone to overfitting and struggle to learn generalizable patterns.
+
+\textbf{High Variance:} The limited sample size leads to high variance in performance estimates. Small changes in the support set can dramatically affect model performance, making robust evaluation protocols crucial for reliable results.
+
+\textbf{Class Imbalance:} Few-shot datasets often exhibit class imbalance, particularly in real-world scenarios where certain types of misinformation may be more prevalent than others. Standard loss functions may not be appropriate for such imbalanced settings.
+
+\textbf{Domain Shift:} Models trained on few examples from specific domains often fail to generalize to new domains or emerging patterns not represented in the limited training data.
+
+\textbf{Evaluation Challenges:} Proper evaluation of few-shot learning systems requires careful experimental design to avoid information leakage and ensure that performance estimates reflect real-world deployment scenarios.
+
+\subsection{Few-Shot Learning Strategies}
+
+Several general strategies have been developed to address few-shot learning challenges:
+
+\textbf{Meta-Learning:} Meta-learning approaches, such as Model-Agnostic Meta-Learning (MAML), learn initialization parameters that can be quickly adapted to new tasks. The key insight is to learn how to learn rather than learning specific task solutions.
+
+\textbf{Metric Learning:} These approaches learn embedding spaces where examples from the same class are close together and examples from different classes are far apart. Classification is performed by comparing query examples to support set prototypes.
+
+\textbf{Data Augmentation:} Various augmentation strategies generate additional training examples from the limited support set through transformations, perturbations, or generative models.
+
+\textbf{Transfer Learning:} Pre-trained models capture general knowledge that can be adapted to specific few-shot tasks through fine-tuning or feature extraction.
+
+\textbf{Regularization:} Specialized regularization techniques prevent overfitting in few-shot scenarios by constraining model complexity or encouraging specific types of solutions.
+
+\section{Graph Neural Networks for Text Classification}
+
+Graph Neural Networks have emerged as a powerful paradigm for modeling structured data, with particular success in text classification tasks where relationships between documents provide valuable signal for classification.
+
+\subsection{Message Passing Framework}
+
+\textbf{Core Principle:} GNNs operate on the message passing framework where nodes iteratively update their representations by aggregating information from neighboring nodes. This process enables the model to capture both local neighborhood information and global graph structure through multiple iterations.
+
+\textbf{General Formulation:} The message passing framework can be described through three key operations:
+
+1. \textbf{Message Function:} $m_{ij}^{(l+1)} = M^{(l)}(h_i^{(l)}, h_j^{(l)}, e_{ij})$ computes messages between connected nodes, where $h_i^{(l)}$ represents the feature vector of node $i$ at layer $l$, and $e_{ij}$ represents edge features.
+
+2. \textbf{Aggregation Function:} $a_i^{(l+1)} = A^{(l)}(\{m_{ij}^{(l+1)} : j \in \mathcal{N}(i)\})$ aggregates messages from all neighbors $\mathcal{N}(i)$ of node $i$.
+
+3. \textbf{Update Function:} $h_i^{(l+1)} = U^{(l)}(h_i^{(l)}, a_i^{(l+1)})$ updates the node representation based on its current state and aggregated messages.
+
+\textbf{Multi-Layer Architecture:} Multiple message passing layers enable nodes to receive information from increasingly distant neighbors, allowing the model to capture both local patterns and global graph structure.
+
+\subsection{Graph Construction for Text}
+
+\textbf{Document Graphs:} For text classification, documents are typically represented as nodes in a graph, with edges indicating various types of relationships such as semantic similarity, citation links, or co-occurrence patterns.
+
+\textbf{Similarity-Based Construction:} The most common approach constructs edges between documents based on content similarity measures such as cosine similarity of embedding vectors. Documents with similarity above a threshold or among the top-k nearest neighbors are connected.
+
+\textbf{Heterogeneous Graphs:} More sophisticated approaches construct heterogeneous graphs that include multiple node types (documents, words, authors, topics) and edge types (document-word, document-document, word-word), enabling richer modeling of text relationships.
+
+\textbf{Dynamic Graph Construction:} Advanced methods adapt graph structure during training or inference, allowing the model to learn optimal connectivity patterns rather than relying on fixed similarity measures.
+
+\subsection{Heterogeneous Graph Attention Networks}
+
+HAN addresses the challenges of modeling heterogeneous graphs with multiple node and edge types through hierarchical attention mechanisms.
+
+\textbf{Node-Level Attention:} For each edge type $\phi$, HAN computes attention weights between connected nodes:
+\begin{equation}
+\alpha_{ij}^{\phi} = \text{softmax}\left(\sigma\left(\mathbf{a}_{\phi}^T [\mathbf{W}_{\phi} \mathbf{h}_i \| \mathbf{W}_{\phi} \mathbf{h}_j]\right)\right)
+\end{equation}
+
+where $\mathbf{W}_{\phi}$ is the edge-type-specific transformation matrix, $\mathbf{a}_{\phi}$ is the attention vector, and $\|$ denotes concatenation.
+
+\textbf{Semantic-Level Attention:} HAN aggregates information across different edge types using learned importance weights:
+\begin{equation}
+\beta_{\phi} = \frac{1}{|\mathcal{V}|} \sum_{i \in \mathcal{V}} \mathbf{q}^T \tanh(\mathbf{W} \cdot \mathbf{h}_i^{\phi} + \mathbf{b})
+\end{equation}
+
+where $\mathbf{h}_i^{\phi}$ represents the node embedding for edge type $\phi$.
+
+\textbf{Final Representation:} The complete node representation combines information from all edge types:
+\begin{equation}
+\mathbf{h}_i = \sum_{\phi \in \Phi} \beta_{\phi} \mathbf{h}_i^{\phi}
+\end{equation}
+
+This hierarchical attention mechanism enables the model to learn both which neighbors are important for each edge type and which edge types are most relevant for the classification task.
+
+\section{Problem Formulation and Notation}
+
+We now formally define the few-shot fake news detection problem addressed in this thesis and establish the mathematical notation used throughout our methodology.
+
+\subsection{Fake News Detection as Node Classification}
+
+\textbf{Graph Representation:} We formulate fake news detection as a node classification problem on a heterogeneous graph $G = (V, E, \mathcal{R})$ where:
+\begin{itemize}
+\item $V$ represents the set of all nodes, including news articles and user interactions
+\item $E$ denotes the set of edges connecting related nodes  
+\item $\mathcal{R}$ represents the set of edge types in the heterogeneous graph
+\end{itemize}
+
+\textbf{Node Types:} Our graph contains two primary node types:
+\begin{itemize}
+\item News nodes $V_n = \{n_1, n_2, \ldots, n_{|N|}\}$ representing news articles
+\item Interaction nodes $V_i = \{i_1, i_2, \ldots, i_{|I|}\}$ representing generated user interactions
+\end{itemize}
+
+\textbf{Node Features:} Each node $v \in V$ has an associated feature vector $\mathbf{x}_v \in \mathbb{R}^d$ where $d = 768$ for DeBERTa embeddings. News nodes additionally have binary labels $y_v \in \{0, 1\}$ indicating real (0) or fake (1) news.
+
+\textbf{Edge Types:} The heterogeneous graph includes multiple edge types:
+\begin{itemize}
+\item News-to-news edges: $(n_i, n_j) \in E_{nn}$ based on semantic similarity
+\item News-to-interaction edges: $(n_i, i_j) \in E_{ni}$ connecting articles to their generated interactions  
+\item Interaction-to-news edges: $(i_j, n_i) \in E_{in}$ enabling bidirectional information flow
+\end{itemize}
+
+\subsection{Few-Shot Learning Configuration}
+
+\textbf{Data Partitioning:} The complete dataset is partitioned into three disjoint sets:
+\begin{itemize}
+\item Training set: $\mathcal{D}_{train} = \mathcal{D}_{labeled} \cup \mathcal{D}_{unlabeled}$
+\item Validation set: $\mathcal{D}_{val}$ for hyperparameter tuning and early stopping
+\item Test set: $\mathcal{D}_{test}$ for final evaluation
+\end{itemize}
+
+\textbf{K-Shot Sampling:} For each few-shot experiment, we sample $K$ labeled examples per class from $\mathcal{D}_{train}$ to form the support set $\mathcal{S} = \{(n_i, y_i)\}_{i=1}^{2K}$. The remaining training instances form the unlabeled set $\mathcal{U}$.
+
+\textbf{Transductive Setting:} During training, all nodes (labeled, unlabeled, and test) participate in message passing, but only labeled nodes contribute to loss computation. This transductive approach maximizes information utilization in few-shot scenarios.
+
+\subsection{Learning Objective}
+
+\textbf{Classification Goal:} Given the heterogeneous graph $G$ and support set $\mathcal{S}$, learn a function $f_{\theta}: G \rightarrow [0,1]^{|V_n|}$ that predicts the probability of each news node being fake.
+
+\textbf{Loss Function:} The training objective combines multiple loss components to address few-shot learning challenges:
+\begin{equation}
+\mathcal{L}_{total} = \mathcal{L}_{CE}(f_{\theta}(G), \mathcal{S}) + \lambda_{focal} \mathcal{L}_{focal}(f_{\theta}(G), \mathcal{S}) + \lambda_{reg} \mathcal{L}_{reg}(\theta)
+\end{equation}
+
+where:
+\begin{itemize}
+\item $\mathcal{L}_{CE}$ is the cross-entropy loss with label smoothing
+\item $\mathcal{L}_{focal}$ is the focal loss for handling class imbalance
+\item $\mathcal{L}_{reg}$ provides regularization to prevent overfitting
+\item $\lambda_{focal}$ and $\lambda_{reg}$ are hyperparameters balancing loss components
+\end{itemize}
+
+\textbf{Evaluation Metrics:} Model performance is evaluated using:
+\begin{itemize}
+\item F1-score: $F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$
+\item Accuracy: $\text{Acc} = \frac{\text{Correct Predictions}}{\text{Total Predictions}}$
+\item Precision: $\text{Prec} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}}$
+\item Recall: $\text{Rec} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}$
+\end{itemize}
+
+\textbf{Statistical Significance:} Given the high variance inherent in few-shot learning, we conduct multiple runs with different random seeds and report mean performance with confidence intervals. Statistical significance is assessed using paired t-tests across multiple experimental runs.
+
+This formal framework provides the mathematical foundation for understanding our GemGNN approach, which addresses the challenges of few-shot fake news detection through novel graph construction strategies, generative data augmentation, and specialized training procedures detailed in the following chapters.
+
+% ------------------------------------------------
+\EndChapter
+% ------------------------------------------------

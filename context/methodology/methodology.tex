@@ -1,0 +1,163 @@
+% ------------------------------------------------
+\StartChapter{Methodology: GemGNN Framework}{chapter:methodology}
+% ------------------------------------------------
+
+\section{Framework Overview}
+
+The GemGNN (Generative Multi-view Interaction Graph Neural Networks) framework addresses the fundamental challenges of few-shot fake news detection through a novel content-based approach that eliminates dependency on user propagation data. Figure~\ref{fig:methodology:overview} illustrates the complete architecture, which consists of five interconnected components: (1) Generative User Interaction Simulation, (2) Test-Isolated KNN Graph Construction, (3) Multi-View Graph Construction, (4) Heterogeneous Graph Architecture, and (5) Enhanced Loss Function Design.
+
+The framework operates under a transductive learning paradigm where all nodes (labeled, unlabeled, and test) participate in message passing, but only labeled nodes contribute to loss computation. This approach maximizes the utility of limited supervision by leveraging the graph structure to propagate information from labeled nodes to unlabeled and test nodes through learned attention mechanisms.
+
+Our approach begins with pre-trained DeBERTa embeddings for news articles, which provide rich semantic representations that capture contextual relationships and linguistic patterns indicative of misinformation. These embeddings serve as the foundation for both graph construction and node feature initialization in our heterogeneous graph neural network.
+
+\section{Generative User Interaction Simulation}
+
+Traditional propagation-based fake news detection methods rely on real user interaction data, which is often unavailable due to privacy constraints or platform limitations. To address this fundamental limitation, we introduce a novel generative approach that synthesizes realistic user interactions using Large Language Models.
+
+\subsection{LLM-based Interaction Generation}
+
+We employ Google's Gemini LLM to generate diverse user interactions for each news article. The generation process is designed to simulate authentic user responses that would naturally occur in social media environments. For each news article $n_i$, we generate a set of user interactions $I_i = \{i_1, i_2, \ldots, i_{20}\}$ where each interaction represents a potential user response to the news content.
+
+The prompt engineering strategy ensures that generated interactions reflect realistic user behavior patterns observed in social media platforms. We incorporate the complete news content, including headlines and article body, to generate contextually appropriate responses that capture various user perspectives and emotional reactions.
+
+\subsection{Multi-tone Interaction Design}
+
+To capture the diversity of user reactions to news content, we implement a structured multi-tone generation strategy that produces interactions across three distinct emotional categories:
+
+\textbf{Neutral Interactions (8 per article):} These represent objective, factual responses that focus on information sharing without emotional bias. Neutral interactions typically include questions for clarification, requests for additional sources, or straightforward restatements of key facts.
+
+\textbf{Affirmative Interactions (7 per article):} These capture supportive or agreeable responses from users who accept the news content as credible. Affirmative interactions include expressions of agreement, sharing intentions, and positive emotional responses.
+
+\textbf{Skeptical Interactions (5 per article):} These represent critical or questioning responses from users who doubt the veracity of the news content. Skeptical interactions include challenges to facts, requests for verification, and expressions of disbelief or concern.
+
+This distribution (8:7:5) reflects observed patterns in real social media interactions where neutral responses predominate, followed by supportive reactions, with skeptical responses being less common but highly informative for authenticity assessment.
+
+\subsection{Interaction-News Edge Construction}
+
+Each generated interaction is embedded using the same DeBERTa model employed for news articles, ensuring semantic consistency across the heterogeneous graph. The interactions are connected to their corresponding news articles through directed edges that carry tone information as edge attributes.
+
+Formally, for each news article $n_i$ and its generated interactions $I_i$, we create edges $(n_i, i_j)$ where the edge attribute $a_{ij}$ encodes the interaction tone: $a_{ij} \in \{0, 1, 2\}$ representing neutral, affirmative, and skeptical tones respectively. This encoding allows the heterogeneous graph attention network to learn tone-specific importance weights during message aggregation.
+
+\section{Test-Isolated KNN Graph Construction}
+
+A critical flaw in existing few-shot learning approaches is the potential for information leakage between training and test sets through graph connectivity. To address this limitation, we introduce a Test-Isolated K-Nearest Neighbor (KNN) construction strategy that enforces strict separation between test nodes while maintaining meaningful connectivity for effective message passing.
+
+\subsection{Test Isolation Strategy and Motivation}
+
+Traditional KNN graph construction methods allow test nodes to connect to each other based on embedding similarity, creating unrealistic scenarios where test instances can share information during inference. This connectivity pattern leads to overly optimistic performance estimates that do not reflect real-world deployment conditions.
+
+Our test isolation strategy prohibits direct connections between test nodes, ensuring that each test instance must rely solely on information propagated from training nodes through the graph structure. This constraint creates a more realistic evaluation scenario that better reflects operational deployment where test instances arrive independently and cannot share information.
+
+\subsection{Mutual KNN for Training Nodes}
+
+For training nodes (both labeled and unlabeled), we employ a mutual KNN approach that creates bidirectional connections between semantically similar news articles. Given the set of training nodes $N_{train} = N_{labeled} \cup N_{unlabeled}$, we compute pairwise cosine similarities between DeBERTa embeddings and select the top-$k$ nearest neighbors for each node.
+
+The mutual KNN constraint ensures that if node $n_i$ selects $n_j$ as a neighbor, then $n_j$ must also select $n_i$ among its top-$k$ neighbors. This bidirectionality strengthens the connections between truly similar articles while reducing noise from asymmetric similarity relationships.
+
+\subsection{Ensuring Test-Train Connectivity}
+
+While test nodes cannot connect to each other, they must maintain connectivity to training nodes to enable effective information propagation. For each test node $n_{test}$, we compute similarities to all training nodes and create edges to the top-$k$ most similar training instances.
+
+This one-way connectivity pattern (training-to-test) ensures that test nodes can receive information from the training set without violating the isolation constraint. The asymmetric edge construction reflects the realistic scenario where new test instances must be classified based solely on their similarity to training examples.
+
+\section{Multi-View Graph Construction}
+
+To capture diverse semantic perspectives within news content, we implement a multi-view learning framework that partitions embeddings into complementary views and constructs separate graph structures for each perspective.
+
+\subsection{Embedding Dimension Splitting Strategy}
+
+Given DeBERTa embeddings of dimension $d = 768$, we partition each embedding vector into three equal subsets: $\mathbf{h}_i^{(1)}, \mathbf{h}_i^{(2)}, \mathbf{h}_i^{(3)} \in \mathbb{R}^{256}$ where $\mathbf{h}_i = [\mathbf{h}_i^{(1)}; \mathbf{h}_i^{(2)}; \mathbf{h}_i^{(3)}]$.
+
+Each view captures different aspects of the semantic representation: the first view focuses on early embedding dimensions that typically encode syntactic and surface-level features, the middle view captures semantic relationships and contextual patterns, and the final view represents higher-level abstractions and discourse-level information.
+
+\subsection{View-specific Edge Construction}
+
+For each view $v \in \{1, 2, 3\}$, we apply the test-isolated KNN strategy using view-specific embeddings $\mathbf{h}_i^{(v)}$. This process generates three distinct graph structures $G^{(1)}, G^{(2)}, G^{(3)}$ where each graph emphasizes different semantic relationships between news articles.
+
+The diversity of edge connections across views ensures that the model learns to integrate multiple perspectives of similarity, forcing it to develop more robust and generalizable feature representations. Articles that appear similar in one semantic view may differ significantly in another, providing complementary information for classification.
+
+\subsection{Multi-Graph Training Strategy}
+
+During training, we process all three views simultaneously, computing separate message passing operations for each graph structure. The view-specific representations are combined through learned attention mechanisms that dynamically weight the importance of each perspective based on the classification task.
+
+This multi-graph approach serves as a form of data augmentation at the graph level, exposing the model to varied structural contexts that improve robustness and generalization. The diverse connectivity patterns help prevent overfitting to specific graph topologies and enhance the model's ability to handle different types of news content.
+
+\section{Heterogeneous Graph Architecture}
+
+\subsection{Node Types and Features}
+
+Our heterogeneous graph contains two primary node types:
+
+\textbf{News Nodes:} Represent news articles with DeBERTa embeddings as node features. Each news node $n_i$ has features $\mathbf{x}_i \in \mathbb{R}^{768}$ and a binary label $y_i \in \{0, 1\}$ indicating real (0) or fake (1) news for labeled instances.
+
+\textbf{Interaction Nodes:} Represent generated user interactions with DeBERTa embeddings as features. Each interaction node $i_j$ has features $\mathbf{x}_j \in \mathbb{R}^{768}$ and is connected to exactly one news article through tone-specific edges.
+
+\subsection{Edge Types and Relations}
+
+The heterogeneous graph incorporates multiple edge types that capture different relationship semantics:
+
+\textbf{News-to-News Edges:} Connect semantically similar news articles based on the test-isolated KNN strategy. These edges enable direct information flow between related news content and are the primary mechanism for few-shot learning.
+
+\textbf{News-to-Interaction Edges:} Connect news articles to their generated user interactions, with edge attributes encoding interaction tones. These edges allow the model to incorporate user perspective information into news classification.
+
+\textbf{Interaction-to-News Edges:} Reverse connections that enable bidirectional information flow between news content and user reactions, allowing interaction patterns to influence news representations.
+
+\subsection{HAN-based Message Passing and Classification}
+
+We employ Heterogeneous Graph Attention Networks (HAN) as our base architecture due to their ability to handle multiple node and edge types through specialized attention mechanisms. The HAN architecture consists of two levels of attention: node-level attention and semantic-level attention.
+
+\textbf{Node-level Attention:} For each edge type, we compute attention weights between connected nodes:
+\begin{equation}
+\alpha_{ij}^{\phi} = \frac{\exp(\sigma(\mathbf{a}_{\phi}^T[\mathbf{W}_{\phi}\mathbf{h}_i \| \mathbf{W}_{\phi}\mathbf{h}_j]))}{\sum_{k \in \mathcal{N}_i^{\phi}} \exp(\sigma(\mathbf{a}_{\phi}^T[\mathbf{W}_{\phi}\mathbf{h}_i \| \mathbf{W}_{\phi}\mathbf{h}_k]))}
+\end{equation}
+
+where $\phi$ represents the edge type, $\mathbf{W}_{\phi}$ is the edge-type-specific transformation matrix, and $\mathbf{a}_{\phi}$ is the attention vector.
+
+\textbf{Semantic-level Attention:} We aggregate information across different edge types using learned importance weights:
+\begin{equation}
+\beta_{\phi} = \frac{1}{|\mathcal{V}|} \sum_{i \in \mathcal{V}} q^T \tanh(\mathbf{W} \cdot \mathbf{h}_i^{\phi} + \mathbf{b})
+\end{equation}
+
+where $\mathbf{h}_i^{\phi}$ is the node representation for edge type $\phi$, and $q$, $\mathbf{W}$, $\mathbf{b}$ are learnable parameters.
+
+The final node representation combines information from all edge types:
+\begin{equation}
+\mathbf{h}_i = \sum_{\phi \in \Phi} \beta_{\phi} \mathbf{h}_i^{\phi}
+\end{equation}
+
+\section{Loss Function Design and Training Strategy}
+
+\subsection{Enhanced Loss Functions for Few-Shot Learning}
+
+To address the challenges of few-shot learning, we implement enhanced loss functions that incorporate label smoothing and focal loss components to improve model robustness and handle class imbalance effectively.
+
+\textbf{Label Smoothing Cross-Entropy:} We apply label smoothing with parameter $\epsilon = 0.1$ to prevent overconfident predictions on limited training data:
+\begin{equation}
+\mathcal{L}_{smooth} = -\sum_{i=1}^{N} \sum_{c=1}^{C} y_i^{smooth}(c) \log p_i(c)
+\end{equation}
+
+where $y_i^{smooth}(c) = (1-\epsilon)y_i(c) + \frac{\epsilon}{C}$ and $p_i(c)$ is the predicted probability for class $c$.
+
+\textbf{Focal Loss Component:} To address potential class imbalance, we incorporate a focal loss term that down-weights easy examples and focuses learning on difficult instances:
+\begin{equation}
+\mathcal{L}_{focal} = -\alpha \sum_{i=1}^{N} (1-p_i)^{\gamma} \log p_i
+\end{equation}
+
+where $\alpha = 0.25$ and $\gamma = 2.0$ are hyperparameters that control the focusing strength.
+
+\subsection{Transductive Learning Framework}
+
+Our training strategy follows a transductive learning paradigm where all nodes participate in message passing, but only labeled nodes contribute to the loss computation. This approach maximizes the utility of unlabeled data by allowing the model to learn better feature representations through graph structure exploration.
+
+The complete loss function combines the enhanced components:
+\begin{equation}
+\mathcal{L}_{total} = \mathcal{L}_{smooth} + \lambda \mathcal{L}_{focal}
+\end{equation}
+
+where $\lambda = 0.1$ balances the contribution of the focal loss component.
+
+Training proceeds for a maximum of 300 epochs with early stopping based on validation performance. We employ the Adam optimizer with learning rate $5 \times 10^{-4}$ and weight decay $1 \times 10^{-3}$ to prevent overfitting in few-shot scenarios.
+
+% ------------------------------------------------
+\EndChapter
+% ------------------------------------------------

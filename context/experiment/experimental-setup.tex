@@ -1,0 +1,186 @@
+% ------------------------------------------------
+\StartChapter{Experimental Setup}{chapter:experimental-setup}
+% ------------------------------------------------
+
+This chapter describes the comprehensive experimental methodology used to evaluate our GemGNN framework. We detail the datasets, preprocessing procedures, baseline implementations, evaluation protocols, and implementation specifics to ensure reproducibility and fair comparison with existing methods.
+
+\section{Datasets and Preprocessing}
+
+\subsection{FakeNewsNet Datasets}
+
+We evaluate our approach on two widely-used benchmark datasets from FakeNewsNet \cite{shu2018fakenewsnet}, which provides professionally verified fake news labels and represents the standard evaluation framework for fake news detection research.
+
+\subsubsection{PolitiFact Dataset}
+
+\textbf{Dataset Characteristics:} The PolitiFact dataset contains political news articles verified by professional fact-checkers. The dataset exhibits a 4:1 ratio of real to fake news, reflecting the relatively higher prevalence of legitimate political news compared to fabricated content.
+
+\textbf{Data Statistics:} The complete dataset distribution is as follows:
+\begin{itemize}
+\item Training set: 246 real articles, 135 fake articles (381 total)
+\item Test set: 73 real articles, 29 fake articles (102 total)  
+\item Total: 319 real articles, 164 fake articles (483 total)
+\end{itemize}
+
+\textbf{Content Characteristics:} Political news articles typically contain factual claims that can be verified through official sources, making the detection task more amenable to content-based analysis. However, sophisticated political misinformation often contains accurate peripheral information with subtle factual distortions.
+
+\subsubsection{GossipCop Dataset}
+
+\textbf{Dataset Characteristics:} The GossipCop dataset focuses on entertainment and celebrity news, presenting different linguistic patterns and verification challenges compared to political content. The dataset maintains an 8:2 ratio of real to fake news.
+
+\textbf{Data Statistics:} The distribution for GossipCop is:
+\begin{itemize}
+\item Training set: 7,955 real articles, 2,033 fake articles (9,988 total)
+\item Test set: 2,169 real articles, 503 fake articles (2,672 total)
+\item Total: 10,124 real articles, 2,536 fake articles (12,660 total)
+\end{itemize}
+
+\textbf{Content Characteristics:} Entertainment news often involves subjective claims and speculation that are harder to verify definitively. Fake entertainment news frequently employs sensational language and unverified celebrity rumors, requiring different detection strategies compared to political misinformation.
+
+\subsection{Data Statistics and Characteristics}
+
+\textbf{Professional Verification:} Both datasets provide labels verified by professional fact-checkers, ensuring high-quality ground truth for evaluation. PolitiFact labels are verified by PolitiFact.com fact-checkers, while GossipCop labels are verified by entertainment fact-checking websites.
+
+\textbf{Content-Only Focus:} Following recent trends toward privacy-preserving fake news detection, we use only the textual content of news articles without any social context, user behavior data, or propagation information. This constraint makes our evaluation more realistic for scenarios where social data is unavailable.
+
+\textbf{Benchmark Standard:} FakeNewsNet represents the most widely-used benchmark in fake news detection research, enabling direct comparison with existing methods and ensuring our results are comparable to prior work.
+
+\subsection{Text Embedding Generation}
+
+\textbf{DeBERTa Model Selection:} We employ DeBERTa (Decoding-enhanced BERT with Disentangled Attention) for generating news article embeddings due to its superior performance on text understanding tasks compared to earlier transformer models.
+
+\textbf{Embedding Process:} Each news article is processed through the pre-trained DeBERTa-base model to generate 768-dimensional embeddings. We use the [CLS] token representation as the article-level embedding, which captures the global semantic meaning of the entire document.
+
+\textbf{Preprocessing Steps:} Before embedding generation, we apply standard text preprocessing:
+\begin{itemize}
+\item Remove HTML tags and special characters
+\item Normalize whitespace and punctuation
+\item Truncate articles to 512 tokens to fit DeBERTa input constraints
+\item Preserve original capitalization and sentence structure
+\end{itemize}
+
+\section{Baseline Methods}
+
+We compare our GemGNN framework against four categories of baseline methods representing different approaches to fake news detection.
+
+\subsection{Traditional Methods}
+
+\textbf{Multi-Layer Perceptron (MLP):} A simple feedforward neural network using DeBERTa embeddings as input features. The MLP consists of two hidden layers with 256 and 128 units respectively, ReLU activation, and dropout regularization. This baseline establishes the performance achievable through pure content-based classification without graph structure.
+
+\textbf{Long Short-Term Memory (LSTM):} A sequential model that processes news articles as sequences of word embeddings. We use a bidirectional LSTM with 128 hidden units followed by a classification head. The LSTM baseline evaluates whether sequential modeling provides advantages over static embeddings for fake news detection.
+
+\subsection{Language Models}
+
+\textbf{BERT:} We fine-tune BERT-base-uncased for binary fake news classification using the standard approach with a classification head added to the [CLS] token representation. Fine-tuning uses a learning rate of 2e-5 with linear warmup and decay.
+
+\textbf{RoBERTa:} Similarly, we fine-tune RoBERTa-base for fake news classification using identical hyperparameters to BERT. RoBERTa represents an improved version of BERT with optimized training procedures and typically achieves better performance on downstream tasks.
+
+\textbf{Implementation Details:} Both BERT and RoBERTa baselines use identical training procedures with batch size 16, maximum sequence length 512, and training for up to 10 epochs with early stopping based on validation performance.
+
+\subsection{Large Language Models}
+
+\textbf{LLaMA:} We evaluate LLaMA-7B using in-context learning with carefully designed prompts that provide examples of fake and real news articles along with classification instructions. The prompt includes 2-3 examples of each class from the support set.
+
+\textbf{Gemma:} Similarly, Gemma-7B is evaluated through in-context learning using identical prompt design to LLaMA. Both LLM baselines represent the state-of-the-art in general language understanding and provide a strong comparison point for specialized approaches.
+
+\textbf{Prompt Design:} Our prompts follow the format: "Given the following news articles, classify each as 'real' or 'fake'. [Examples] Now classify: [Test Article]". We experiment with different prompt variations and report the best performance achieved.
+
+\subsection{Graph-based Methods}
+
+\textbf{Less4FD:} A recent graph-based approach that constructs similarity graphs between news articles and applies graph convolutional networks for classification. We implement Less4FD using the original paper's specifications with KNN graph construction and GCN message passing.
+
+\textbf{HeteroSGT:} A heterogeneous graph-based method that models multiple entity types and relationships for fake news detection. We adapt the original implementation to work with our content-only setting by removing social features and focusing on text-based relationships.
+
+\textbf{Implementation Consistency:} All graph-based baselines use identical graph construction strategies where possible, including the same similarity measures, edge construction procedures, and node features to ensure fair comparison.
+
+\section{Evaluation Methodology}
+
+\subsection{Few-Shot Evaluation Protocol}
+
+\textbf{K-Shot Configuration:} We evaluate all methods across four few-shot settings: K ∈ {3, 4, 8, 16} shots per class. These settings span from extremely few-shot (3-shot) to moderate few-shot (16-shot) scenarios.
+
+\textbf{Data Splitting:} For each K-shot experiment, we randomly sample K examples per class from the training set to form the labeled support set. The remaining training instances serve as unlabeled data for transductive methods. The test set remains fixed across all experiments.
+
+\textbf{Multiple Runs:} To account for the high variance inherent in few-shot learning, we conduct 10 independent runs for each experimental configuration using different random seeds for support set sampling. We report mean performance and 95% confidence intervals across these runs.
+
+\textbf{Stratified Sampling:} When sampling support sets, we ensure balanced representation across classes and, where possible, across different subtopics or time periods to avoid bias in the selected examples.
+
+\subsection{Performance Metrics}
+
+\textbf{Primary Metric - F1-Score:} We use F1-score as our primary evaluation metric due to the class imbalance present in both datasets. F1-score provides a balanced measure that considers both precision and recall, making it appropriate for imbalanced classification tasks.
+
+\textbf{Secondary Metrics:} We also report accuracy, precision, and recall to provide a comprehensive view of model performance. Accuracy provides an overall measure of correctness, while precision and recall reveal whether models exhibit bias toward specific classes.
+
+\textbf{Statistical Significance Testing:} We employ paired t-tests to assess statistical significance of performance differences between methods. Results are considered statistically significant at p < 0.05 level.
+
+\subsection{Statistical Significance Testing}
+
+\textbf{Experimental Design:} Our statistical testing accounts for the paired nature of few-shot experiments where the same support sets are used across different methods. This pairing reduces variance and increases the power of statistical tests.
+
+\textbf{Bonferroni Correction:} When conducting multiple comparisons across different K-shot settings and datasets, we apply Bonferroni correction to control for multiple testing and ensure that reported significance levels are reliable.
+
+\textbf{Effect Size Reporting:} In addition to statistical significance, we report effect sizes (Cohen's d) to quantify the practical significance of performance differences between methods.
+
+\section{Implementation Details}
+
+\subsection{Hyperparameter Settings}
+
+\textbf{Graph Construction Parameters:}
+\begin{itemize}
+\item K-nearest neighbors: k = 5 for news-news connections
+\item Embedding dimension split: 3 views of 256 dimensions each
+\item Interaction generation: 20 interactions per news article (8 neutral, 7 affirmative, 5 skeptical)
+\item Similarity threshold: Cosine similarity for edge construction
+\end{itemize}
+
+\textbf{Model Architecture Parameters:}
+\begin{itemize}
+\item Hidden dimensions: 64 units in GNN layers  
+\item Attention heads: 4 heads for multi-head attention
+\item Number of GNN layers: 2 layers for both HAN and HGT variants
+\item Dropout rate: 0.3 for regularization
+\item Activation function: ReLU for hidden layers
+\end{itemize}
+
+\textbf{Training Parameters:}
+\begin{itemize}
+\item Learning rate: 5e-4 with Adam optimizer
+\item Weight decay: 1e-3 for L2 regularization  
+\item Batch size: Full graph (transductive learning)
+\item Maximum epochs: 300 with early stopping
+\item Patience: 30 epochs for early stopping
+\item Label smoothing: ε = 0.1 for few-shot robustness
+\end{itemize}
+
+\subsection{Model Architecture Configuration}
+
+\textbf{HAN Layers:} Our primary architecture uses Heterogeneous Graph Attention Networks with 2 layers. Each layer includes both node-level and semantic-level attention mechanisms to handle the heterogeneous graph structure effectively.
+
+\textbf{Attention Mechanisms:} We employ 4 attention heads in each layer to capture different aspects of node relationships. The multi-head attention provides diverse perspectives on graph connectivity patterns.
+
+\textbf{Residual Connections:} Following best practices for graph neural networks, we include residual connections between layers to facilitate gradient flow and prevent vanishing gradients in deeper architectures.
+
+\textbf{Layer Normalization:} Each GNN layer includes layer normalization to stabilize training and improve convergence, particularly important for few-shot scenarios where training data is limited.
+
+\subsection{Training Configuration and Hardware Setup}
+
+\textbf{Hardware Configuration:} All experiments are conducted on NVIDIA A100 GPUs with 40GB memory. The powerful hardware enables efficient processing of large heterogeneous graphs and rapid experimentation across multiple hyperparameter configurations.
+
+\textbf{Software Environment:} 
+\begin{itemize}
+\item Python 3.8 with PyTorch 1.12
+\item PyTorch Geometric 2.1 for graph neural network implementations
+\item Transformers library 4.20 for DeBERTa and baseline language models
+\item CUDA 11.6 for GPU acceleration
+\end{itemize}
+
+\textbf{Training Time:} Typical training time for GemGNN ranges from 15-30 minutes per experimental run, depending on dataset size and graph complexity. The efficient implementation enables comprehensive experimentation across multiple configurations and random seeds.
+
+\textbf{Memory Requirements:} The heterogeneous graph construction and GNN training require approximately 8-12GB GPU memory for the larger GossipCop dataset, well within the capacity of modern research GPUs.
+
+\textbf{Reproducibility Measures:} We fix random seeds for all random processes including data sampling, model initialization, and training procedures. All hyperparameters, data splits, and experimental configurations are documented to enable reproduction of results.
+
+This comprehensive experimental setup ensures rigorous evaluation of our GemGNN framework while maintaining fairness in comparison with baseline methods and providing reliable, statistically significant results that support our research contributions.
+
+% ------------------------------------------------
+\EndChapter
+% ------------------------------------------------
