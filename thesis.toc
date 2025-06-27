@@ -3,7 +3,7 @@
 \contentsline {chapter}{Table of Contents}{v}{section*.6}%
 \contentsline {chapter}{List of Tables}{viii}{section*.7}%
 \contentsline {chapter}{List of Figures}{ix}{section*.8}%
-\contentsline {chapter}{Nomenclature}{xi}{section*.9}%
+\contentsline {chapter}{Nomenclature}{x}{section*.9}%
 \contentsline {chapter}{Chapter 1.{\ \ \ }Introduction}{1}{chapter.1}%
 \contentsline {section}{1.1.{\ \ \ }Research Background and Motivation}{1}{section.1.1}%
 \contentsline {section}{1.2.{\ \ \ }Problem Statement and Challenges}{2}{section.1.2}%
